@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册(登录)--走秀</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+	</head>
+	<body>
+	
+	这个页面既可以做为登录页也可以作为注册页面(即是短信验证登录)
+	
+		<!--头部header 开始-->
+		<div id="header">
+			<div class="heade_con">
+				<h1 class="logo_box">
+					<a href="#" class="logo">
+						<img src="../img/login_logo.png"/>
+					</a>
+				</h1>
+			</div>
+		</div>
+		<!--头部header 结束-->
+		
+		<!--内容页content 开始-->
+		<div id="content">
+			<div class="con_back_wrap">
+				<div class="con_back"></div>
+				<div class="con_form">
+					<form action="" method="post">
+						<!--登陆-->
+						<div class="login">
+							
+							<!--表头，短信或手机-->
+							<ul class="login_tab">
+								<!--active应用于js中-->
+								<li><a href="#" >短信登录</a></li>
+								<li><a href="#" class="active">密码登录</a></li>
+							</ul>
+							
+							<!--输入框登录部分-->
+							
+							
+							<div class="login_form">
+								
+								<!--短信验证登录-->
+								<!--短信验证登录-->
+								<!--短信验证登录-->
+								<!--记得更改对象的login_tab的active-->
+								<ul style="display: none;">
+									<!-- 手机号码 -->
+									<li class="username">
+										<input type="text" name="phoneNum" id="phoneNum" value="" class="input_num" />
+										<!--<label for="">手机号码</label>-->
+										<span class="clear"></span>
+									</li>
+
+									<!-- 验证码 -->
+									<li class="msgcode">
+										<input type="text" class="input_code" name="" id="" value="" />
+										<!--<label for="">短信验证码</label>-->
+										<a href="#" class="code_btn">获取验证码</a>
+										<span class="clear"></span>
+										<!--利用一个空的span标签清除浮动塌陷问题-->
+									</li>
+
+									<!-- 自动登录和找回密码 -->
+									<li class="check">
+										<label for="">
+											<span></span>
+											<input type="checkbox" class="lcheck" name="is_AutoLogin" id="" value="" checked="true" style="display: none;" />
+											两周内自动登录
+											<input type="hidden" name="isAutoLogin" id="" value="" />
+										</label>
+										<!--js提示非安全状态下不勾选两周自动登录安全-->
+										<div class="remind" style="display: none;"></div>
+										
+										<div class="rePass">
+											<a href="#" class="getpass">找回密码</a>
+										</div>
+
+									</li>
+									<!-- 登录按钮 -->
+									<li class="btn">
+										<button class="login_btn">登<span></span>录</button>
+										<span class="clear"></span>
+									</li>
+								</ul>
+								
+								<!--账号登录-->
+								<!--账号登录-->
+								<!--账号登录-->
+								<!--记得更改对象的login_tab的active-->
+								<ul style="display:block;">
+									<!-- 手机号码 -->
+									<li class="username">
+										<input type="text" name="phoneNum" id="phoneNum" value="" class="input_num" />
+										<!--<label for="">手机号码</label>-->
+										<span class="clear"></span>
+									</li>
+
+									<!-- 密码 -->
+									<li class="pass">
+										<input type="password" name="phoneNum" id="phoneNum" value="" class="input_num" />
+										<!--<label for="">手机号码</label>-->
+										<span class="clear"></span>
+									</li>
+
+									<!-- 自动登录和找回密码 -->
+									<li class="check">
+										<label for="">
+											<span></span>
+											<input type="checkbox" class="lcheck" name="is_AutoLogin" id="" value="" checked="true" style="display: none;" />
+											两周内自动登录
+											<input type="hidden" name="isAutoLogin" id="" value="" />
+										</label>
+										<!--js提示非安全状态下不勾选两周自动登录安全-->
+										<div class="remind" style="display: none;"></div>
+										
+										<div class="rePass">
+											<a href="#" class="getpass">找回密码</a>
+											<em>|</em>
+											<a href="#" class="getpass">注册账号</a>
+										</div>
+
+									</li>
+									<!-- 登录按钮 -->
+									<li class="btn">
+										<button class="login_btn">登<span></span>录</button>
+										<span class="clear"></span>
+									</li>
+								</ul>
+								
+								
+							</div>
+							
+								
+							<!--其他登录平台-->
+							<div class="login_ext">
+								<dt><span class="tit">合作网站账号登录</span></dt>
+								<dd>
+									<ul>
+										<li><a href="#" title="QQ账号" class="qq"></a></li>
+										<li><a href="#" title="微信账号" class="wx"></a></li>
+										<li><a href="#" title="新浪微博" class="wb"></a></li>
+										<li><a href="#" title="支付宝账号" class="zfb"></a></li>
+										<li><a href="#" title="平安万里通" class="wlt"></a></li>
+									</ul>
+								</dd>
+							</div>
+							
+								
+							<!--二维码登陆,两个a标签-->
+							<a href="" class="login_ewm"></a>
+							<a href="" class="login_go"></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--内容页content 结束-->
+		
+		<div class="clear"></div>
+		
+		<!-- footer页脚部分 开始 -->
+		<div class="footer_wrap">
+			<div class="footer">
+				<!--服务详情-->
+				
+				
+				<!--链接导航-->
+				<div class="foot_link">
+					<div class="link_con">
+						<ul>
+							<li><a href="#">关于走秀</a></li>
+							<li><a href="#">媒体报道</a></li>
+							<li><a href="#">品牌招商</a></li>
+							<li><a href="#">加入走秀</a></li>
+							<li><a href="#">友情链接</a></li>
+							<li><a href="#">联系我们</a></li>
+							<li><a href="#">帮助中心</a></li>
+							<li><a href="#">网站地图</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 海外正品 -->
+				
+				
+				<!--网站声明-->
+				<div class="foot_explain">
+					<p>
+						Copyright © 2008-2016 <a href="#">Xiu.com</a> 版权所有 . 粤ICP备07502993号
+					</p>
+				</div>
+				
+				<!--法律安全-->
+				
+			</div>
+		</div>
+		<!-- footer页脚部分 结束 -->
+		
+		
+	</body>
+</html>

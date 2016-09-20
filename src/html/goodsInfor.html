@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>走秀--商品详情页</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/goodsInfor.css"/>
+	</head>
+	<body>
+		
+		<!--http://item.xiu.com/product/45720529.shtml#s_id=1_32286_6_2_0-->
+
+		
+		<!-- 头部header 开始 -->
+		<div id="header">
+			<!-- 一级header -->
+			<div class="fix_head">
+				<div class="head_box">
+					<div class="main_wrap">
+						<div class="main_box">
+						<!-- 利用main_box 和 head 构成了一个巧妙的形式，鼠标经过和初始状态占高不一样，但是整体保持不变 -->
+							<!-- 登录注册 -->
+							<div class="head">					
+								<ul class="head_login">
+									<li class="my_login">
+										<a href="#">登录/注册</a>
+									</li>
+									<li class="my_bag">
+										<a href="#">购物袋0件</a>
+										<div class="myBag_con"></div>
+									</li>
+									<li class="my_xiu">
+										<a href="#">我的首秀</a>
+										<div class="myXiu_con"></div>
+									</li>
+								</ul>
+							</div>
+							<!-- logo -->
+							<div class="logo">
+								<a href="#"></a>
+							</div>
+							<!-- 搜索 -->
+							<div class="search_wrap">
+								<div class="search">
+									<!-- label解决placeholder的兼容问题 -->
+									<!-- 点击利用jq隐藏label -->
+
+									<!-- 
+									<label for="sea_input" class="sea_label">搜索试试</label>
+									 -->
+
+									<input type="text" id="sea_input" placeholder="搜索试试">
+									<button class="btn"></button>
+								</div>
+							</div>
+							<div class="clear"></div>
+
+							<!-- 一级导航 -->
+							<div class="navBox">
+								<ul class="navList">
+									<li>
+										<a href="#" class="navCheck">首页</a>
+									</li>
+									<li>
+										<a href="#">新品</a>
+									</li>
+									<li>
+										<a href="#">男士</a>
+									</li>
+									<li>
+										<a href="#">女士</a>
+									</li>
+									<li>
+										<a href="#">品牌</a>
+									</li>
+									<li>
+										<a href="#"><span class="fine">发现</span></a>
+									</li>
+									<li>
+										<a href="#">专题</a>
+									</li>
+									<li>
+										<a href="#">手机走秀</a>
+									</li>
+								</ul>
+							</div>
+						</div><!-- main_box -->
+					</div>					
+				</div>
+			</div><!-- fix_head -->
+
+			<div class="clear"></div>
+
+			<!-- 二级导航栏的js -->
+			<!-- <script src="#"></script> -->
+			<!-- 二级导航 -->
+			<div class="fix_head2">
+				<div class="nav_box" id="nav_box">
+					<div class="nav">
+						<ul class="clear">
+
+							<!-- 包袋 -->
+							<li class="menu_li">
+								<a href="#"><span>包袋</span></a>
+								<!-- 二级导航栏下的菜单 -->
+								<!-- height: 0; opacity: 0; display: none; -->
+								<div class="menu_tab" style="height: 0; opacity: 0; display: none;">
+									<div class="tab_box">
+										<div class="tab_con">
+											<!-- 左边的分类 -->
+											<div class="tab_con_type">
+												<!-- 女士包袋 -->
+												<dl>				
+													<dt>
+														<h4>
+															<a href="#">女士包袋</a>
+														</h4>
+													</dt>
+													<dd>
+														<a href="#">手提包</a>
+														<a href="#">单肩包</a>
+														<a href="#">斜挎包</a>
+														<a href="#">提挎两用包</a>
+														<br>
+														<a href="#">双肩包</a>
+														<a href="#">钱包</a>
+														<a href="#">手拿包/晚宴包</a>
+														<a href="#">化妆包</a>
+													</dd>
+												</dl>
+												<!-- 男士包袋 -->
+												<dl>				
+													<dt>
+														<h4>
+															<a href="#">男士包袋</a>
+														</h4>
+													</dt>
+													<dd>
+														<a href="#">手提包</a>
+														<a href="#">公文包</a>
+														<a href="#">单肩包</a>
+														<a href="#">斜挎包</a>
+														<a href="#">提挎两用包</a>
+														<br>
+														<a href="#">双肩包</a>
+														<a href="#">钱包</a>
+														<a href="#">手包/夹包</a>
+													</dd>
+												</dl>
+												<!-- 功能箱包 -->
+												<dl>				
+													<dt>
+														<h4>
+															<a href="#">功能箱包</a>
+														</h4>
+													</dt>
+													<dd>
+														<a href="#">电脑包/袋</a>
+														<a href="#">iPad套</a>
+														<a href="#">摄影包/相机袋</a>
+														<a href="#">手机袋/手机壳</a>
+														<a href="#">钥匙包</a>
+														<a href="#">名片夹</a>
+														<br>
+														<a href="#">证件套</a>
+														<a href="#">卡包</a>
+														<a href="#">腰包</a>
+														<a href="#">环保袋</a>
+														<a href="#">其他</a>
+													</dd>
+												</dl>
+												<!-- 旅行箱包 -->
+												<dl>				
+													<dt>
+														<h4>
+															<a href="#">旅行箱包</a>
+														</h4>
+													</dt>
+													<dd>
+														<a href="#">旅行箱</a>
+														<a href="#">旅行包</a>
+														<a href="#">登山包</a>
+												</dl>
+											</div>
+											<!-- 右边的热门品牌 -->
+											<div class="tab_con_hot">
+												<dl class="clear">
+													<dt><h4>热门品牌</h4></dt>
+													<dd>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<!-- 服装 -->
+							<li class="menu_li">
+								<a href="#"><span>服装</span></a>
+								<!-- 二级导航栏下的菜单 -->
+								<!-- height: 0; opacity: 0; display: none; -->
+								<div class="menu_tab" style="height: 0; opacity: 0; display: none;">
+									<div class="tab_box">
+										<div class="tab_con">
+											<div class="tab_con_wrap">
+												<!-- 女装 -->
+												<!-- 左边的分类 -->
+												<div class="tab_cloth_w">
+
+													<!-- 女装 -->
+													<h5><a href="#">女装</a></h5>
+
+													<!-- 上装 -->
+													<dl class="clear">
+														<dt><a href="#">上装</a></dt>
+														<dd>
+															<a href="#">风衣</a>
+															<a href="#">POLO衫</a>
+															<a href="#">小西装</a>
+															<a href="#">针织衫</a>
+															<a href="#">T恤</a>
+															<a href="#">卫衣</a>
+															<a href="#">毛衫/羊毛衫</a>
+															<a href="#">寸衫</a>
+															<a href="#">大衣</a>
+															<a href="#">外套</a>
+															<a href="#">羽绒服</a>
+															<a href="#">棉服</a>
+															<a href="#">皮衣/皮草</a>
+															<a href="#">套装</a>
+															<a href="#">马甲</a>
+															<a href="#">雪纺衫</a>
+															<a href="#">吊带衫/背心</a>
+														</dd>
+													</dl>
+
+													<!-- 下装 -->
+													<dl class="clear">
+														<dt><a href="#">下装</a></dt>
+														<dd>
+															<a href="#">休闲裤</a>
+															<a href="#">牛仔裤</a>
+															<a href="#">短裤</a>
+															<a href="#">西装裤</a>
+															<a href="#">打底裤</a>
+															<a href="#">皮裤</a>
+															<a href="#">连体裤</a>
+														</dd>
+													</dl>
+
+													<!-- 裙装 -->
+													<dl class="clear">
+														<dt><a href="#">裙装</a></dt>
+														<dd>
+															<a href="#">连衣裙</a>
+															<a href="#">半身裙</a>
+														</dd>
+													</dl>
+
+													<!-- 内衣 -->
+													<dl class="clear">
+														<dt><a href="#">内衣</a></dt>
+														<dd>
+															<a href="#">文胸</a>
+															<a href="#">内裤</a>
+															<a href="#">塑身内衣</a>
+															<a href="#">袜子</a>
+															<a href="#">打底内衣</a>
+															<a href="#">睡袍/睡衣/家居服</a>
+														</dd>
+													</dl>
+
+													<!-- 运动户外 -->
+													<dl class="clear">
+														<dt><a href="#">运动户外</a></dt>
+														<dd>
+															<a href="#">游妆泳帽</a>
+															<a href="#">运动服</a>
+															<a href="#">户外服/冲锋衣</a>
+														</dd>
+													</dl>
+
+												</div>
+												<!-- 右边的热门品牌 -->
+												<div class="tab_cloth_hot">
+													<div class="clear">
+														<h5>热门品牌</h5>
+														<p>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+														</p>
+													</div>
+												</div>
+
+												<!-- 分割的虚线 -->
+												<p class="dashed"></p>
+
+												<!-- 男装 -->
+												<!-- 左边的分类 -->
+												<div class="tab_cloth_w">
+													<h5><a href="#">男装</a></h5>
+
+													<!-- 上装 -->
+													<dl class="clear">
+														<dt><a href="#">上装</a></dt>
+														<dd>
+															<a href="#">风衣</a>
+															<a href="#">POLO衫</a>
+															<a href="#">小西装</a>
+															<a href="#">针织衫</a>
+															<a href="#">T恤</a>
+															<a href="#">卫衣</a>
+															<a href="#">毛衫/羊毛衫</a>
+															<a href="#">寸衫</a>
+															<a href="#">大衣</a>
+															<a href="#">外套</a>
+															<a href="#">羽绒服</a>
+															<a href="#">棉服</a>
+															<a href="#">皮衣/皮草</a>
+															<a href="#">套装</a>
+															<a href="#">马甲</a>
+															<a href="#">雪纺衫</a>
+															<a href="#">吊带衫/背心</a>
+														</dd>
+													</dl>
+
+													<!-- 下装 -->
+													<dl class="clear">
+														<dt><a href="#">下装</a></dt>
+														<dd>
+															<a href="#">休闲裤</a>
+															<a href="#">牛仔裤</a>
+															<a href="#">短裤</a>
+															<a href="#">西装裤</a>
+															<a href="#">打底裤</a>
+															<a href="#">皮裤</a>
+															<a href="#">连体裤</a>
+														</dd>
+													</dl>
+
+													<!-- 裙装 -->
+													<dl class="clear">
+														<dt><a href="#">裙装</a></dt>
+														<dd>
+															<a href="#">连衣裙</a>
+															<a href="#">半身裙</a>
+														</dd>
+													</dl>
+
+													<!-- 内衣 -->
+													<dl class="clear">
+														<dt><a href="#">内衣</a></dt>
+														<dd>
+															<a href="#">文胸</a>
+															<a href="#">内裤</a>
+															<a href="#">塑身内衣</a>
+															<a href="#">袜子</a>
+															<a href="#">打底内衣</a>
+															<a href="#">睡袍/睡衣/家居服</a>
+														</dd>
+													</dl>
+
+													<!-- 运动户外 -->
+													<dl class="clear">
+														<dt><a href="#">运动户外</a></dt>
+														<dd>
+															<a href="#">游妆泳帽</a>
+															<a href="#">运动服</a>
+															<a href="#">户外服/冲锋衣</a>
+														</dd>
+													</dl>
+
+												</div>
+												<!-- 右边的热门品牌 -->
+												<div class="tab_cloth_hot">
+													<div class="clear">
+														<h5>热门品牌</h5>
+														<p>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<!-- 鞋靴 -->
+							<li class="menu_li">
+								<a href="#"><span>鞋靴</span></a>
+								<div class=""></div>
+							</li>
+
+							<!-- 腕表 -->
+							<li class="menu_li">
+								<a href="#"><span>腕表</span></a>
+								<div class=""></div>
+							</li>
+
+							<!-- 配饰 -->
+							<li class="menu_li">
+								<a href="#"><span>配饰</span></a>
+								<div class=""></div>
+							</li>
+
+							<!-- 妆品 -->
+							<li class="menu_li">
+								<a href="#"><span>妆品</span></a>
+								<div class=""></div>
+							</li>
+
+							<!-- 生活 -->
+							<li class="menu_li">
+								<a href="#"><span>生活</span></a>
+								<div class=""></div>
+							</li>
+
+							<!-- 婴童 -->
+							<li class="menu_li">
+								<a href="#"><span>婴童</span></a>
+								<div class=""></div>
+							</li>
+
+							<!-- 豪车 -->
+							<li class="menu_li">
+								<a href="#"><span>豪车</span></a>
+								<div class=""></div>
+							</li>
+						</ul>
+					</div><!-- nav -->
+
+					<!-- 可能需要一个js实现 -->
+					<!-- <script type="text/javascript"></script> -->
+				</div><!-- nav_box -->
+			</div><!-- fix_head2 -->
+		</div>
+		<div class="clear"></div>
+		<!-- 头部header 结束 -->
+		
+		
+		<!--官方网址-->
+		<!--http://item.xiu.com/product/45720529.shtml#s_id=1_32286_6_2_0-->
+		
+		
+		<!--商品详情页-->
+		<!--主体内容main 开始-->
+		<div class="main">
+			<!--当前位置-->
+			<div class="main_now">
+				您的位置：
+				<span id="positionBox">
+					<a href="">走秀首页</a> &gt;
+  	  	  	  		<span id="positionPrdName">男士宇宙计型迪通拿测速计自动机械腕表 116503GY</span> 
+  				</span>
+			</div>
+			
+			<!--商品详情内容 product_con 开始-->
+			<div class="product_con">
+				<!--商品的主要信息-->
+				<div class="con_main">
+					<!--产品图片 开始-->
+					<div class="pro_map">
+						<!--大图-->
+						<div class="big_map">
+							<div class="big_map_img"></div>
+						</div>
+						
+						<!--小图-->
+						<div class="small_map">
+							
+							<ul id="smallPic">
+				            	<!--dc 表示当前状态-->
+				            	<li class="dc">
+				            		<a href="#">
+				            			<img src="" alt="">
+				            		</a>
+				            	</li>
+					            <li class="">
+					            	<a href="#">
+					            		<img src="" alt="">
+					            	</a>
+					            </li>
+					            <li class="">
+					            	<a href="#">
+					            		<img src="" alt="">
+					            	</a>
+					            </li>
+					            <li class="">
+					            	<a href="#">
+					            		<img src="" alt="">
+					            	</a>
+					            </li>
+					            <li class="">
+					            	<a href="#">
+					            		<img src="" alt="">
+					            	</a>
+					            </li>
+				            </ul>
+							
+						</div>
+					</div>
+					<!--产品图片 结束-->
+					
+					<!--产品价格内容 开始-->
+					<div class="pro_price">
+						<!-- 价格信息 开始-->
+						<div class="price_info">
+							<!--商品标题-->
+							<div class="pro_title">
+								<!--大标题-->
+								<span>
+									<h1>
+										男士宇宙计型迪通拿测速计自动机械腕表 116503GY
+										<i></i>
+									</h1>
+								</span>
+								<!--小标题-->
+								<span class="cp">
+									<font>品<em></em>牌</font>
+									<a href="#" target="_blank">Rolex</a>
+									<a href="#" style="text-decoration: none; padding-left: 6px;"> (劳力士)</a>
+									<a href="#" style="color: #005BA1; margin-left: 10px;">已有133条评论</a>
+									<i>商品编号：59004914</i>
+								</span>
+							</div>
+							
+							<!--具体价格栏-->
+							<!-- id用于js -->
+							<div id="prd_price_div">
+								<div id="prd_price_div" class="xxjx">
+									<div class="col1 z1">
+										<span class="spw">走 秀 价：</span>
+										<span class="style3">10.06万</span>
+									</div>
+									<p class="col1 xs">
+										<span class="rightxs">
+											市场参考价：<b>￥</b>12.41万
+										</span>
+									</p>
+									<div class="clear"></div>
+									<p class="col1 myf layer13">
+										<span class="spw">发 货 地：</span>
+											<b>香港</b>
+											<b class="stime">预计4-7天送达</b>
+											<a class="">
+												查看配送流程
+												<!-- i.tiptools为配送流程图 -->
+												<i class="tiptools">
+													<img src="../img/PC-Hongkong4-7.jpg">
+												</i>
+											</a>
+									</p>
+									<p class="col1">
+										<span class="spw">税<em></em>费：</span>
+										由海外卖家承担
+										<a href="" class="seedet">
+											详细说明
+											<!--em鼠标经过的时候显示的内容-->
+											<em>本商品为海外商品，关税由海外卖家承担，如顾客接海关或物流商通知缴纳税费，请先行按国家规定支付，再凭纳税凭证联系走秀客服找海外卖家报销。</em>
+										</a>
+									</p>
+									<p class="col1 grays">
+										<span class="spw">温馨提示：</span>
+										<span style="line-height:28px;display: inline-block;float: left;">本商品无质量问题不支持退换货和拒收</span>
+									</p>
+								</div>
+							</div>
+
+							<!-- 购物栏 -->
+							<!-- id用于js -->
+							<div class="cm" id="prd_attr_div">
+								<div class="modleBox">
+									<!-- 颜色 -->
+									<div class="cm_type" id="">
+										<p class="cm_color">颜<em></em>色:</p>
+										<!-- 可能存在多个颜色，每一个一个li -->
+										<ul class="color_s">
+											<!-- select表示选中的 -->
+											<li class="select">
+												<a href="#" id="">灰色</a>
+											</li>
+										</ul>
+									</div>
+
+									<!-- 尺码 -->
+									<div class="cm_type" id="">
+										<!-- 引用于颜色html -->
+										<p class="cm_color">尺<em></em>寸:</p>
+										<ul class="color_s">
+											<!-- select表示选中的 -->
+											<li class="select">
+												<a href="#" id="">40mm</a>
+											</li>
+										</ul>
+									</div>
+
+									<!-- 数量 -->
+									<div class="cm_type" id="">
+										<p class="cm_color">数<em></em>量:</p>
+										<div class="color_s">
+											<span class="down"></span>
+											<input type="text" value="1">
+											<span class="up"></span>件
+											<span class="num_con"></span>											
+										</div>
+									</div>
+
+									<!-- 分期付款 -->
+									<div class="money" id=""> 
+											<a href="#" class="fqfh">支持分期付款
+												<!--鼠标经过"分期付款"显示的内容 em -->
+												<em>
+													<img src="../img/fqbiao.jpg">
+													<b>订单总金额大于
+														<font color="#ea7514">500</font>
+														元即可选择订单分期付款
+													</b>
+													<br>支付时选择“信用卡分期"-"银联在线支付”，
+													<br>即可分期付款。
+												</em>
+											</a>
+											<span class="fwb">由走秀网提供售后服务</span>
+									</div>
+									<!-- 立即购买 -->
+									<div class="buy">
+										<a href="#" class="buy0" title="立即购买"></a>
+										<a href="#" class="buy1" title="放入购物车"></a>
+										<a href="#" class="sc_t" title="收藏"></a>
+										
+									</div>
+									<!-- 电弧订购 -->
+									<div class="call_buy">
+										电话订购：
+										<strong>400-888-4499</strong>&nbsp;
+										<span>（08:00-24:00）</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- 价格信息 结束-->
+						
+						<div class="clear"></div>
+						
+						<!--分享底栏-->
+						<div class="share_box">
+				        	<dl>
+				            	<dt><img src="../img/45720529.jpg" width="90" height="90"></dt>
+				                <dd>
+				                	<p style="height:30px;"></p>
+				                	扫一扫二维码<br>分享给朋友
+				                </dd>
+				            </dl>
+				            <div class="ensuer">
+				                <div id="shareBox" class="fxd" style="width:300px;">
+				                	<span>分享到：</span>
+				                	<a href="" title="分享到新浪"></a>
+				                	<a href="" title="分享到腾讯微博"></a>
+				                	<a href="" title="分享到人人网"></a>
+				                	<a href="" title="分享到开心网"></a>
+				                	<a href="" title="分享到豆瓣"></a>
+				                	<a href="" title="分享到美丽说"></a>
+				                </div>
+				            </div>
+				        </div>
+					</div>
+					<!--产品价格内容 结束-->
+					
+				</div>
+				
+				<!--商品的导航(滚动轮到一定的位置发生变化)-->
+				<div class="cpmx" style="position: static; top: 886px;">
+			        <div class="cpmx_tt">
+			            <ul id="container_ul">
+			                <li class="on">
+			                	<a href="" hidefocus="true">商品信息</a>
+			                </li>
+			                <li class="pdo_pl">
+			                	<a href="" hidefocus="true" id="comment_total_num">
+			                		品牌评论(133)
+			                		<i></i>
+			                	</a>
+			                </li>
+			                <li><a href="#" hidefocus="true">走秀承诺</a></li>
+			                <li><a href="#" hidefocus="true">服务保障</a></li>
+			            </ul>
+			            <!--放入购物袋-->
+			            <div class="cp_bags">
+			            	<span onsale="1" saletype="">10.06万</span>
+			            	<a href="" id="float_buy_add"></a>
+			            </div>
+			        </div>
+			    </div>
+			    <!--商品的导航 结束-->
+				
+				<!--商品的详细信息 - 开始-->
+				<div class="mian_con_all">
+					<!--左侧产品介绍 - 开始 -->
+					<div class="con_left">
+						<div class="container" id="container0">
+				            <div class="contents">
+				              	<!--商品属性-开始 -->
+				              	<h5>商品属性</h5>
+				              	<table width="100%" class="tab_xq" border="0" cellpadding="0" cellspacing="0">
+				              	    <tbody>
+				              	    	<tr>
+						              		<td width="32%"><strong>特殊功能：</strong>测速计</td>
+						                    <td width="32%"><strong>表盘厚：</strong>12.3mm</td>
+						                    <td width="32%"><strong>表镜材质：</strong>蓝宝石,水晶玻璃</td>
+					              		</tr>
+					              		<tr>
+						              		<td width="32%"><strong>表盘形状：</strong>圆形</td>
+						                    <td width="32%"><strong>表盘颜色：</strong>灰色</td>
+						                    <td width="32%"><strong>表带颜色：</strong>间金</td>
+					              		</tr>
+					              		<tr>
+						              		<td width="32%"><strong>手表机芯：</strong>自动机械</td>
+						                    <td width="32%"><strong>表壳尺寸（长宽、直径）：</strong>40mm</td>
+						                    <td width="32%"><strong>表壳材质：</strong>黄金,精钢</td>
+					              		</tr>
+					              		<tr>
+						              		<td width="32%"><strong>显示方式：</strong>指针</td>
+						                    <td width="32%"><strong>表扣方式：</strong>折叠式</td>
+						                    <td width="32%"><strong>防水深度：</strong>100米</td>
+					              		</tr>
+					              		<tr>
+						              		<td width="32%"><strong>产品系列名称：</strong>宇宙计型迪通拿</td>
+						                    <td width="32%"><strong>手表表壳材质：</strong>黄金及钢</td>
+						                    <td width="32%"><strong>表带材质：</strong>黄金及钢</td>
+					              		</tr>
+					              		<tr>
+				              		        <td width="32%"><strong>钟表流行元素：</strong>其他</td>
+				              		        <td width="32%"><strong>适合性别：</strong>男性</td>
+				              		    	<td title="不支持" width="32%"><strong>货到付款：</strong>不支持</td>
+							        	</tr>
+				              	    </tbody>
+				                </table>
+				                <!--商品属性-结束 -->
+				                
+				                <!-- 图片说明  开始-->
+				              	<div class="img_description">
+				              		<!--名店优势-->
+				                    <div style=" padding-top:10px;">
+				                    	<img usemap="#Map" src="../img/ys.jpg">
+										<map name="Map">
+					  						<area target="_blank" href="#" coords="73,147,134,165" shape="rect">
+					  					</map>
+									</div>
+									<!--温馨提示-->
+									<div style="padding:15px 0px;">
+										<img usemap="#Map2" src="../img/wx.jpg">
+										<map name="Map2">
+											<area href="mailto:ceo@xiu.com" traget="_blank" coords="666,468,748,483" shape="rect">
+										</map>
+									</div>
+				                </div>
+				                
+				                <!--商品实拍-->
+				                <h5>商品实拍</h5>
+								<div style="padding:0 20px;">
+									<div style="color:red;font-weight: bold;width: 5.5em;;height:2em;float: left;">温馨提示：</div>
+									<div class="warmth_tips_content">走秀网所有商品均为实物拍摄，我们尽最大努力将商品的原貌展示给您，但因拍摄灯光、个人显示器等原因，可能会有一定色差，请以实物为准。</div>
+								</div>            
+						        <div class="conlist">
+						        	<img src="../img/e0.jpg" width="700" height="563" alt="700×563">
+						        	<img src="../img/e1.jpg" width="700" height="563" alt="700×563">
+						        	<img src="../img/e2.jpg" width="700" height="563" alt="700×563">
+						        	<img src="../img/e3.jpg" width="700" height="563" alt="700×563">
+						        	<img src="../img/e4.jpg" width="700" height="563" alt="700×563">
+						        </div>
+					        	<!--品牌故事-->
+						        <h5>品牌故事</h5>
+								<div class="conlist">
+								    <p>
+								    	<img onerror="sizePicErr(this);" src="../img/1497_2_11464663505728.jpg" width="700" height="5112" alt="700×5112">
+								    </p>
+								</div>
+								<!--末尾：温馨提示-->
+							    <div class="wx_tps">
+					              	<strong>温馨提醒</strong>
+					                <p>走秀网市场价采集自品牌国内外商场专柜及品牌官网标价，仅供参考，不作为购物依据。因各种因素导致市场价格浮动，从而造成走秀网市场价与专柜价或官网标价不一致的，为避免由此产生的任何纠纷，走秀网提醒你请均以专柜价或官网标价为准，敬请知悉。</p>
+				              	</div>
+				            </div>
+				            <div class="container">
+					        	<iframe id="shortComment" name="shortComment" src="" height="50" width="774px" frameborder="0" scrolling="no" src3=""></iframe>
+					        </div>	
+			            </div>	
+					</div>
+					<!--左侧产品介绍 - 结束-->
+					<!--右侧广告-->
+					<div class="con_right"></div>
+				</div>
+				<!--商品的详细信息 - 结束-->
+				
+			</div>
+			<!--商品详情内容 product_con 结束-->
+				
+		</div>
+		<!--主体内容main 结束-->
+		
+		
+		<!-- footer页脚部分 开始 -->
+		<div class="footer_wrap">
+			<div class="footer">
+				<!--服务详情-->
+				<div class="foot_server">
+					<div class="server">
+						<!--联系电话-->
+						<div class="phone">
+							<a href="#" class="onlink"></a>
+							<p class="num"></p>
+							<a href="#" class="tucao"></a>
+						</div>
+						<!--新手入门-->
+						<ul>
+							<li class="li_head">新手入门</li>
+							<li><a href="#" target="_blank">购物流程</a></li>
+							<li><a href="#" target="_blank">会员等级与升级</a></li>
+							<li><a href="#" target="_blank">我的走秀</a></li>
+							<li><a href="#" target="_blank">常见问题</a></li>
+							<li><a href="#" target="_blank">手机走秀</a></li>
+						</ul>
+						<!--配送方式-->
+						<ul>
+							<li class="li_head">配送方式</li>
+							<li><a href="#" target="_blank">海外配送说明</a></li>
+							<li><a href="#" target="_blank">配送运费</a></li>
+							<li><a href="#" target="_blank">配送查询</a></li>
+						</ul>
+						<!--支付方式-->
+						<ul>
+							<li class="li_head">支付方式</li>
+							<li><a href="#" target="_blank">在线支付</a></li>
+							<li><a href="#" target="_blank">货到付款</a></li>
+							<li><a href="#" target="_blank">银行汇款</a></li>
+						</ul>
+						<!--售后服务-->
+						<ul>
+							<li class="li_head">售后服务</li>
+							<li><a href="#" target="_blank">退换货自助申请</a></li>
+							<li><a href="#" target="_blank">退换货政策</a></li>
+							<li><a href="#" target="_blank">退换货流程</a></li>
+							<li><a href="#" target="_blank">退款说明</a></li>
+							<li><a href="#" target="_blank">CEO邮箱</a></li>
+						</ul>
+						<!--扫二维码-->
+						<dl class="ewm">
+							<dt>走秀微信客服</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</div>
+				
+				<!--链接导航-->
+				<div class="foot_link">
+					<div class="link_con">
+						<ul>
+							<li><a href="#">关于走秀</a></li>
+							<li><a href="#">Abuot us</a></li>
+							<li><a href="#">媒体报道</a></li>
+							<li><a href="#">品牌招商</a></li>
+							<li><a href="#">加入走秀</a></li>
+							<li><a href="#">网站地图</a></li>
+							<li><a href="#">联系我们</a></li>
+							<li><a href="#">品牌大全</a></li>
+							<li><a href="#">邮件订阅</a></li>
+							<li><a href="#">品牌专题</a></li>
+							<li><a href="#">WAP站点</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 海外正品 -->
+				<div class="foot_hwzp">
+					<a href="#" target="_blank" title="海外直发" class="f1"></a>
+					<a href="#" target="_blank" title="正品保证" class="f2"></a>
+					<a href="#" target="_blank" title="售后保障" class="f3"></a>
+				</div>
+				
+				<!--网站声明-->
+				<div class="foot_explain">
+					<p>
+						Copyright © 2008-2016 <a href="#">Xiu.com</a>深圳走秀网络科技有限公司 版权所有 . <a href="#">粤ICP备07502993号</a>
+					</p>
+				</div>
+								
+			</div>
+		</div>
+		<!-- footer页脚部分 结束 -->
+	</body>
+</html>

@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>走秀--主页</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+	<body>
+		<!-- 头部header 开始 -->
+		<div id="header">
+			<!-- 一级header -->
+			<div class="fix_head">
+				<div class="head_box">
+					<div class="main_wrap">
+						<div class="main_box">
+						<!-- 利用main_box 和 head 构成了一个巧妙的形式，鼠标经过和初始状态占高不一样，但是整体保持不变 -->
+							<!-- 登录注册 -->
+							<div class="head">					
+								<ul class="head_login">
+									<li class="my_login">
+										<a href="#">登录/注册</a>
+									</li>
+									<li class="my_bag">
+										<a href="#">购物袋0件</a>
+										<div class="myBag_con"></div>
+									</li>
+									<li class="my_xiu">
+										<a href="#">我的首秀</a>
+										<div class="myXiu_con"></div>
+									</li>
+								</ul>
+							</div>
+							<!-- logo -->
+							<div class="logo">
+								<a href="#"></a>
+							</div>
+							<!-- 搜索 -->
+							<div class="search_wrap">
+								<div class="search">
+									<!-- label解决placeholder的兼容问题 -->
+									<!-- 点击利用jq隐藏label -->
+
+									<!-- 
+									<label for="sea_input" class="sea_label">搜索试试</label>
+									 -->
+
+									<input type="text" id="sea_input" placeholder="搜索试试">
+									<button class="btn"></button>
+								</div>
+							</div>
+							<div class="clear"></div>
+
+							<!-- 一级导航 -->
+							<div class="navBox">
+								<ul class="navList">
+									<li>
+										<a href="#" class="navCheck">首页</a>
+									</li>
+									<li>
+										<a href="#">新品</a>
+									</li>
+									<li>
+										<a href="#">男士</a>
+									</li>
+									<li>
+										<a href="#">女士</a>
+									</li>
+									<li>
+										<a href="#">品牌</a>
+									</li>
+									<li>
+										<a href="#"><span class="fine">发现</span></a>
+									</li>
+									<li>
+										<a href="#">专题</a>
+									</li>
+									<li>
+										<a href="#">手机走秀</a>
+									</li>
+								</ul>
+							</div>
+						</div><!-- main_box -->
+					</div>					
+				</div>
+			</div><!-- fix_head -->
+
+			<div class="clear"></div>
+
+			<!-- 二级导航栏的js -->
+			<!-- <script src="#"></script> -->
+			<!-- 二级导航 -->
+			<div class="fix_head2">
+				<div class="nav_box" id="nav_box">
+					<div class="nav">
+						<ul class="clear">
+
+							<!-- 包袋 -->
+							<li class="menu_li">
+								<a href="#"><span>包袋</span></a>
+								<!-- 二级导航栏下的菜单 -->
+								<!-- height: 0; opacity: 0; display: none; -->
+								<div class="menu_tab" style="height: 0; opacity: 0; display: none;">
+									<div class="tab_box">
+										<div class="tab_con">
+											<!-- 左边的分类 -->
+											<div class="tab_con_type">
+												<!-- 女士包袋 -->
+												<dl>				
+													<dt>
+														<h4>
+															<a href="#">女士包袋</a>
+														</h4>
+													</dt>
+													<dd>
+														<a href="#">手提包</a>
+														<a href="#">单肩包</a>
+														<a href="#">斜挎包</a>
+														<a href="#">提挎两用包</a>
+														<br>
+														<a href="#">双肩包</a>
+														<a href="#">钱包</a>
+														<a href="#">手拿包/晚宴包</a>
+														<a href="#">化妆包</a>
+													</dd>
+												</dl>
+												<!-- 男士包袋 -->
+												<dl>				
+													<dt>
+														<h4>
+															<a href="#">男士包袋</a>
+														</h4>
+													</dt>
+													<dd>
+														<a href="#">手提包</a>
+														<a href="#">公文包</a>
+														<a href="#">单肩包</a>
+														<a href="#">斜挎包</a>
+														<a href="#">提挎两用包</a>
+														<br>
+														<a href="#">双肩包</a>
+														<a href="#">钱包</a>
+														<a href="#">手包/夹包</a>
+													</dd>
+												</dl>
+												<!-- 功能箱包 -->
+												<dl>				
+													<dt>
+														<h4>
+															<a href="#">功能箱包</a>
+														</h4>
+													</dt>
+													<dd>
+														<a href="#">电脑包/袋</a>
+														<a href="#">iPad套</a>
+														<a href="#">摄影包/相机袋</a>
+														<a href="#">手机袋/手机壳</a>
+														<a href="#">钥匙包</a>
+														<a href="#">名片夹</a>
+														<br>
+														<a href="#">证件套</a>
+														<a href="#">卡包</a>
+														<a href="#">腰包</a>
+														<a href="#">环保袋</a>
+														<a href="#">其他</a>
+													</dd>
+												</dl>
+												<!-- 旅行箱包 -->
+												<dl>				
+													<dt>
+														<h4>
+															<a href="#">旅行箱包</a>
+														</h4>
+													</dt>
+													<dd>
+														<a href="#">旅行箱</a>
+														<a href="#">旅行包</a>
+														<a href="#">登山包</a>
+												</dl>
+											</div>
+											<!-- 右边的热门品牌 -->
+											<div class="tab_con_hot">
+												<dl class="clear">
+													<dt><h4>热门品牌</h4></dt>
+													<dd>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+														<a href="#">Chanel</a>
+														<a href="#">Louis Vuitton</a>
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<!-- 服装 -->
+							<li class="menu_li">
+								<a href="#"><span>服装</span></a>
+								<!-- 二级导航栏下的菜单 -->
+								<!-- height: 0; opacity: 0; display: none; -->
+								<div class="menu_tab" style="height: 0; opacity: 0; display: none;">
+									<div class="tab_box">
+										<div class="tab_con">
+											<div class="tab_con_wrap">
+												<!-- 女装 -->
+												<!-- 左边的分类 -->
+												<div class="tab_cloth_w">
+
+													<!-- 女装 -->
+													<h5><a href="#">女装</a></h5>
+
+													<!-- 上装 -->
+													<dl class="clear">
+														<dt><a href="#">上装</a></dt>
+														<dd>
+															<a href="#">风衣</a>
+															<a href="#">POLO衫</a>
+															<a href="#">小西装</a>
+															<a href="#">针织衫</a>
+															<a href="#">T恤</a>
+															<a href="#">卫衣</a>
+															<a href="#">毛衫/羊毛衫</a>
+															<a href="#">寸衫</a>
+															<a href="#">大衣</a>
+															<a href="#">外套</a>
+															<a href="#">羽绒服</a>
+															<a href="#">棉服</a>
+															<a href="#">皮衣/皮草</a>
+															<a href="#">套装</a>
+															<a href="#">马甲</a>
+															<a href="#">雪纺衫</a>
+															<a href="#">吊带衫/背心</a>
+														</dd>
+													</dl>
+
+													<!-- 下装 -->
+													<dl class="clear">
+														<dt><a href="#">下装</a></dt>
+														<dd>
+															<a href="#">休闲裤</a>
+															<a href="#">牛仔裤</a>
+															<a href="#">短裤</a>
+															<a href="#">西装裤</a>
+															<a href="#">打底裤</a>
+															<a href="#">皮裤</a>
+															<a href="#">连体裤</a>
+														</dd>
+													</dl>
+
+													<!-- 裙装 -->
+													<dl class="clear">
+														<dt><a href="#">裙装</a></dt>
+														<dd>
+															<a href="#">连衣裙</a>
+															<a href="#">半身裙</a>
+														</dd>
+													</dl>
+
+													<!-- 内衣 -->
+													<dl class="clear">
+														<dt><a href="#">内衣</a></dt>
+														<dd>
+															<a href="#">文胸</a>
+															<a href="#">内裤</a>
+															<a href="#">塑身内衣</a>
+															<a href="#">袜子</a>
+															<a href="#">打底内衣</a>
+															<a href="#">睡袍/睡衣/家居服</a>
+														</dd>
+													</dl>
+
+													<!-- 运动户外 -->
+													<dl class="clear">
+														<dt><a href="#">运动户外</a></dt>
+														<dd>
+															<a href="#">游妆泳帽</a>
+															<a href="#">运动服</a>
+															<a href="#">户外服/冲锋衣</a>
+														</dd>
+													</dl>
+
+												</div>
+												<!-- 右边的热门品牌 -->
+												<div class="tab_cloth_hot">
+													<div class="clear">
+														<h5>热门品牌</h5>
+														<p>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+														</p>
+													</div>
+												</div>
+
+												<!-- 分割的虚线 -->
+												<p class="dashed"></p>
+
+												<!-- 男装 -->
+												<!-- 左边的分类 -->
+												<div class="tab_cloth_w">
+													<h5><a href="#">男装</a></h5>
+
+													<!-- 上装 -->
+													<dl class="clear">
+														<dt><a href="#">上装</a></dt>
+														<dd>
+															<a href="#">风衣</a>
+															<a href="#">POLO衫</a>
+															<a href="#">小西装</a>
+															<a href="#">针织衫</a>
+															<a href="#">T恤</a>
+															<a href="#">卫衣</a>
+															<a href="#">毛衫/羊毛衫</a>
+															<a href="#">寸衫</a>
+															<a href="#">大衣</a>
+															<a href="#">外套</a>
+															<a href="#">羽绒服</a>
+															<a href="#">棉服</a>
+															<a href="#">皮衣/皮草</a>
+															<a href="#">套装</a>
+															<a href="#">马甲</a>
+															<a href="#">雪纺衫</a>
+															<a href="#">吊带衫/背心</a>
+														</dd>
+													</dl>
+
+													<!-- 下装 -->
+													<dl class="clear">
+														<dt><a href="#">下装</a></dt>
+														<dd>
+															<a href="#">休闲裤</a>
+															<a href="#">牛仔裤</a>
+															<a href="#">短裤</a>
+															<a href="#">西装裤</a>
+															<a href="#">打底裤</a>
+															<a href="#">皮裤</a>
+															<a href="#">连体裤</a>
+														</dd>
+													</dl>
+
+													<!-- 裙装 -->
+													<dl class="clear">
+														<dt><a href="#">裙装</a></dt>
+														<dd>
+															<a href="#">连衣裙</a>
+															<a href="#">半身裙</a>
+														</dd>
+													</dl>
+
+													<!-- 内衣 -->
+													<dl class="clear">
+														<dt><a href="#">内衣</a></dt>
+														<dd>
+															<a href="#">文胸</a>
+															<a href="#">内裤</a>
+															<a href="#">塑身内衣</a>
+															<a href="#">袜子</a>
+															<a href="#">打底内衣</a>
+															<a href="#">睡袍/睡衣/家居服</a>
+														</dd>
+													</dl>
+
+													<!-- 运动户外 -->
+													<dl class="clear">
+														<dt><a href="#">运动户外</a></dt>
+														<dd>
+															<a href="#">游妆泳帽</a>
+															<a href="#">运动服</a>
+															<a href="#">户外服/冲锋衣</a>
+														</dd>
+													</dl>
+
+												</div>
+												<!-- 右边的热门品牌 -->
+												<div class="tab_cloth_hot">
+													<div class="clear">
+														<h5>热门品牌</h5>
+														<p>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+															<a href="#">Chanel</a>
+															<a href="#">Louis Vuitton</a>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<!-- 鞋靴 -->
+							<li class="menu_li">
+								<a href="#"><span>鞋靴</span></a>
+								<div class=""></div>
+							</li>
+
+							<!-- 腕表 -->
+							<li class="menu_li">
+								<a href="#"><span>腕表</span></a>
+								<div class=""></div>
+							</li>
+
+							<!-- 配饰 -->
+							<li class="menu_li">
+								<a href="#"><span>配饰</span></a>
+								<div class=""></div>
+							</li>
+
+							<!-- 妆品 -->
+							<li class="menu_li">
+								<a href="#"><span>妆品</span></a>
+								<div class=""></div>
+							</li>
+
+							<!-- 生活 -->
+							<li class="menu_li">
+								<a href="#"><span>生活</span></a>
+								<div class=""></div>
+							</li>
+
+							<!-- 婴童 -->
+							<li class="menu_li">
+								<a href="#"><span>婴童</span></a>
+								<div class=""></div>
+							</li>
+
+							<!-- 豪车 -->
+							<li class="menu_li">
+								<a href="#"><span>豪车</span></a>
+								<div class=""></div>
+							</li>
+						</ul>
+					</div><!-- nav -->
+
+					<!-- 可能需要一个js实现 -->
+					<!-- <script type="text/javascript"></script> -->
+				</div><!-- nav_box -->
+			</div><!-- fix_head2 -->
+		</div>
+		<div class="clear"></div>
+		<!-- 头部header 结束 -->
+		
+		<!--右侧导航栏nav_right 开始 -->
+		<div id="nav_right" style="top: 214.5px;">
+			<img src="img/right.png"/>
+		</div>
+		<!--右侧导航栏nav_right 结束 -->
+
+		<!-- content主体内容 开始-->
+		<div class="content_wrap">
+			<div class="conBox">
+				<!-- 活动入口 -->
+				<div class="con_Banner">
+					<div class="banner">
+						<a href="#" target="_blank">
+							<img src="img/banner.jpg"/>
+						</a>
+					</div>
+				</div>
+
+				<!-- 快捷入口 -->
+				<!--shortcut 快捷-->
+				<div class="con_shortcut">
+					<a href="#" class="share" target="_blank"></a>
+					<a href="#" class="new" target="_blank"></a>
+					<a href="#" class="newbie" target="_blank"></a>
+					<a href="#" class="friend" target="_blank"></a>
+				</div>
+
+				<!-- 尖货推荐 -->
+				<div class="con_goods">
+					<!--标题-->
+					<h3>
+						<img src="img/goods_t.jpg"/>
+					</h3>
+					<!--第一块尖货-->
+					<ul>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/goods_a1 (1).jpg" style="display: inline;"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/goods_a1 (2).jpg" style="display: inline;"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/goods_a1 (3).jpg" style="display: inline;"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/goods_a1 (4).jpg" style="display: inline;"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/goods_a1 (5).jpg" style="display: inline;"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/goods_a1 (6).jpg" style="display: inline;"/>
+							</a>
+						</li>
+					</ul>
+					<!--第二块尖货-->
+					<ul>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/goods_a1 (7).jpg" style="display: inline;"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/goods_a1 (8).jpg" style="display: inline;"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/goods_a1 (9).jpg" style="display: inline;"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/goods_a1 (10).jpg" style="display: inline;"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/goods_a1 (11).jpg" style="display: inline;"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/goods_a1 (12).jpg" style="display: inline;"/>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- 热荐专题 -->
+				<div class="con_hot">
+					<!--标题-->
+					<h3>
+						<img src="img/hot_t.jpg"/>
+					</h3>
+					
+					<!--内容-->
+					<ul>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/beats_06.jpg" class="lazy pic"/>
+								<p><img src="img/beats_06t.png"/></p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/beats_01.jpg" class="lazy pic"/>
+								<p><img src="img/beats_01.png"/></p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/beats_02.jpg" class="lazy pic"/>
+								<p><img src="img/beats_02.png"/></p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/beats_03.jpg" class="lazy pic"/>
+								<p><img src="img/beats_03.png"/></p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/beats_04.jpg" class="lazy pic"/>
+								<p><img src="img/beats_04.png"/></p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/beats_05.jpg" class="lazy pic"/>
+								<p><img src="img/beats_05.png"/></p>
+							</a>
+						</li>
+					</ul>
+					
+					<!--查看更多-->
+					<h3>
+						<a href="#" target="_blank">
+							<img src="img/more_hot.jpg"/>
+						</a>
+					</h3>
+				</div>
+
+				<!-- 精选卖场 -->
+				<div class="con_store">
+					<!--标题-->
+					<h3>
+						<img src="img/stort_t.jpg"/>
+					</h3>
+					
+					<!--内容-->
+					<ul>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/0908sales_01.jpg" class="lazy pic"/>
+								<p><img src="img/0908sales_01.png"/></p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/0908sales_02.jpg" class="lazy pic"/>
+								<p><img src="img/0908sales_02.png"/></p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/0908sales_03.jpg" class="lazy pic"/>
+								<p><img src="img/0908sales_03.png"/></p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/0908sales_04.jpg" class="lazy pic"/>
+								<p><img src="img/0908sales_04.png"/></p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/0908sales_05.jpg" class="lazy pic"/>
+								<p><img src="img/0908sales_05.png"/></p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/0908sales_06.jpg" class="lazy pic"/>
+								<p><img src="img/0908sales_06.png"/></p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/0908sales_07.jpg" class="lazy pic"/>
+								<p><img src="img/0908sales_07.png"/></p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/0908sales_08.jpg" class="lazy pic"/>
+								<p><img src="img/0908sales_08.png"/></p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/0908sales_09.jpg" class="lazy pic"/>
+								<p><img src="img/0908sales_09.png"/></p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/0908sales_10.jpg" class="lazy pic"/>
+								<p><img src="img/0908sales_10.png"/></p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/0908sales_11.jpg" class="lazy pic"/>
+								<p><img src="img/0908sales_11.png"/></p>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/0908sales_12.jpg" class="lazy pic"/>
+								<p><img src="img/0908sales_12.png"/></p>
+							</a>
+						</li>
+					</ul>
+					
+					<!--查看更多-->
+					<h3>
+						<img src="img/more_stort.jpg"/>
+					</h3>
+				</div>
+
+				<!-- 豪车入口 -->
+				<div class="con_car">
+					<a href="#" target="_blank">
+						<img src="img/car.jpg"/>
+					</a>
+				</div>
+
+				<!-- 发现好货 -->
+				<div class="con_find">
+					<h3></h3>
+					<ul>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/fine (1).jpg"/>
+							</a>
+							<!-- 一个p标签省略 -->
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/fine (2).jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/fine (3).jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/fine (4).jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/fine (5).jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/fine (6).jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/fine (7).jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/fine (8).jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/fine (9).jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/fine (10).jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/fine (11).jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/fine (12).jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/fine (13).jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/fine (14).jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/fine (15).jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/fine (16).jpg"/>
+							</a>
+						</li>
+					</ul>
+					<h3></h3>
+				</div>
+				
+			</div><!-- conBox -->
+		</div>
+		<!-- content主体内容 结束-->
+		
+		<!-- footer页脚部分 开始 -->
+		<div class="footer_wrap">
+			<div class="footer">
+				<!--服务详情-->
+				<div class="foot_server">
+					<div class="server">
+						<!--联系电话-->
+						<div class="phone">
+							<a href="#" class="onlink"></a>
+							<p class="num"></p>
+							<a href="#" class="tucao"></a>
+						</div>
+						<!--新手入门-->
+						<ul>
+							<li class="li_head">新手入门</li>
+							<li><a href="#" target="_blank">购物流程</a></li>
+							<li><a href="#" target="_blank">会员等级与升级</a></li>
+							<li><a href="#" target="_blank">我的走秀</a></li>
+							<li><a href="#" target="_blank">常见问题</a></li>
+							<li><a href="#" target="_blank">手机走秀</a></li>
+						</ul>
+						<!--配送方式-->
+						<ul>
+							<li class="li_head">配送方式</li>
+							<li><a href="#" target="_blank">海外配送说明</a></li>
+							<li><a href="#" target="_blank">配送运费</a></li>
+							<li><a href="#" target="_blank">配送查询</a></li>
+						</ul>
+						<!--支付方式-->
+						<ul>
+							<li class="li_head">支付方式</li>
+							<li><a href="#" target="_blank">在线支付</a></li>
+							<li><a href="#" target="_blank">货到付款</a></li>
+							<li><a href="#" target="_blank">银行汇款</a></li>
+						</ul>
+						<!--售后服务-->
+						<ul>
+							<li class="li_head">售后服务</li>
+							<li><a href="#" target="_blank">退换货自助申请</a></li>
+							<li><a href="#" target="_blank">退换货政策</a></li>
+							<li><a href="#" target="_blank">退换货流程</a></li>
+							<li><a href="#" target="_blank">退款说明</a></li>
+							<li><a href="#" target="_blank">CEO邮箱</a></li>
+						</ul>
+						<!--扫二维码-->
+						<dl class="ewm">
+							<dt>走秀微信客服</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</div>
+				
+				<!--链接导航-->
+				<div class="foot_link">
+					<div class="link_con">
+						<ul>
+							<li><a href="#">关于走秀</a></li>
+							<li><a href="#">Abuot us</a></li>
+							<li><a href="#">媒体报道</a></li>
+							<li><a href="#">品牌招商</a></li>
+							<li><a href="#">加入走秀</a></li>
+							<li><a href="#">网站地图</a></li>
+							<li><a href="#">联系我们</a></li>
+							<li><a href="#">品牌大全</a></li>
+							<li><a href="#">邮件订阅</a></li>
+							<li><a href="#">品牌专题</a></li>
+							<li><a href="#">WAP站点</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 海外正品 -->
+				<div class="foot_hwzp">
+					<a href="#" target="_blank" title="海外直发" class="f1"></a>
+					<a href="#" target="_blank" title="正品保证" class="f2"></a>
+					<a href="#" target="_blank" title="售后保障" class="f3"></a>
+				</div>
+				
+				<!--网站声明-->
+				<div class="foot_explain">
+					<p>
+						Copyright © 2008-2016 <a href="#">Xiu.com</a>深圳走秀网络科技有限公司 版权所有 . <a href="#">粤ICP备07502993号</a>
+					</p>
+				</div>
+				
+				<!--法律安全-->
+				<div class="foot_law">
+					<a href="#" target="_blank">
+						<img src="img/c_01.jpg" alt="">
+					</a>
+					<a href="#" target="_blank">
+						<img src="img/c_02.jpg" alt="">
+					</a>
+					<a href="#" target="_blank">
+						<img src="img/c_03.jpg" alt="">
+					</a>
+					<a href="#" target="_blank">
+						<img src="img/c_04.jpg" alt="">
+					</a>
+					<a href="#" target="_blank">
+						<img src="img/c_05.jpg" alt="">
+					</a>
+					<a href="#" target="_blank">
+						<img src="img/c_06.jpg" alt="">
+					</a>
+					<a href="#" target="_blank">
+						<img src="img/c_08.jpg" alt="">
+					</a>
+					<a href="#" target="_blank">
+						<img src="img/c_09.jpg" alt="">
+					</a>
+					<a href="#" target="_blank">
+						<img src="img/c_10.jpg" alt="">
+					</a>
+				</div>
+				<!--法律安全 结束-->
+			</div>
+		</div>
+		<!-- footer页脚部分 结束 -->
+	</body>
+</html>

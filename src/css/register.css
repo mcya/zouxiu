@@ -1,0 +1,467 @@
+/* 清除浮动引起的塌陷 */ 
+.clear:after{
+	content:'.';
+	display:block;
+	height:0;
+	clear:both;
+	overflow:hidden;
+}
+
+/*ie清除浮动*/
+.clear{
+	zoom:1
+}
+
+/*宽高百分百*/
+body,html{ width:100%; height:100%; font-size: 12px;}
+
+a{
+	color: #000;
+	outline: none;
+	text-decoration: none;
+}
+
+img{
+	vertical-align: middle;
+}
+
+img,fieldset{
+	border: 0 none;
+}
+h3{
+	display: block;
+	font-size: 1.17em;
+	font-weight: bold;
+}
+
+body{ font:12px tahoma, arial, sans-serif;_font:12px 'å®‹ä½“', tahoma, arial, sans-serif; color:#000;background:#fff;}
+
+/*=====*/
+button,input,textarea{
+	font-family: inherit;
+	font-size: 100%;
+}
+input[type="checkbox" i]{
+	margin: 3px 3px 3px 4px;
+}
+input[type="checkbox" i] {
+    -webkit-appearance: checkbox;
+    box-sizing: border-box;
+}
+input[type="checkbox" i] {
+    background-color: initial;
+    margin: 3px 0.5ex;
+    padding: initial;
+    border: initial;
+}
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    -webkit-rtl-ordering: logical;
+    -webkit-user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+}
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+input[type="hidden" i], input[type="image" i], input[type="file" i] {
+    -webkit-appearance: initial;
+    background-color: initial;
+    padding: initial;
+    border: initial;
+}
+
+input[type="hidden" i] {
+    display: none;
+}
+
+
+
+/*========== 头部header =============*/
+#header{
+	width: 1200px;
+	margin: 0 auto;
+}
+.heade_con{
+	height: 60px;
+}
+.heade_con .logo_box{
+	width: 194px;
+	height: 30px;
+	float: left;
+	position: relative;
+	margin: 15px auto;
+}
+.heade_con .logo_box a.logo{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+
+/*===== 内容页content ====*/
+#content{
+	border-top: 1px solid #E5E5E5;
+	padding: 0;
+	overflow: hidden;
+	text-shadow: #fff 0 1px 0;
+}
+.con_back_wrap{
+	width: 100%;
+	height: 700px;
+	position: relative;
+}
+.con_back_wrap .con_back{
+	width: 100%;
+	height: 560px;
+	margin-left: -50%;
+	padding: 70px 0;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	background: url(img/login_background.jpg) no-repeat center #f7f2ec;
+	z-index: 0;
+}
+
+/*表单*/
+.con_form{
+	height: 560px;
+	width: 1200px;
+	margin: 0 auto;
+	margin-left: -600px;
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	z-index: 1;
+}
+form{
+	display: block;
+}
+
+#content .con_form .login{
+	width: 420px;
+	height: 560px;
+	position: absolute;
+	top: 0;
+	right: 30px;
+	background: #fff;
+	border: 1px solid #d8d8d8;
+	box-shadow: 0 0 20px #C8C8C8;
+	text-shadow: #fff 0 1px 0;
+	z-index: 10;
+}
+
+/*表单的头部切换*/
+.login_tab{
+	height: 52px;
+}
+.login_tab,.login_tab li a{
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+}
+
+.login_tab li{
+	float: left;
+	width: 210px;
+	background-color: #F7F7F9;
+}
+
+.login_tab li a{
+	color: #AFAFAF;
+	float: left;
+	width: 210px;
+	text-align: center;
+	border-bottom: 2px solid #F7F7F9;
+}
+.login_tab li a.active,.login_tab li a:hover{
+	color: #464646;
+	text-decoration: none;
+	font-weight: 700;
+	border-color: #464646;
+}
+
+/*表单输入框及登陆*/
+.login_form{
+	width: 302px;
+	margin: 30px auto 0;
+}
+.login_form li{
+	display: block;
+	margin-top: 24px;
+	position: relative;
+	zoom: 1;
+	clear: both;
+}
+/*手机号码*/
+.login_form .input_num,.login_form .input_code{
+	width: 280px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #D8D8D8;
+	color: #464646;
+	padding: 5px 10px;
+	font-size: 12px;
+	position: relative;
+}
+/*验证码*/
+.login_form .input_code{
+	width: 165px;
+	height: 24px;
+	float: left;
+}
+a.code_btn{
+	color: #464646;
+	display: block;
+}
+a.code_btn,a.code_btn2{
+	width: 100px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 13px;	
+	float: right;
+	text-align: center;
+	text-shadow: none;
+	background-color: #F7F7F9;
+	border: 1px solid #ccc;
+}
+
+/*两周内自动登录*/
+.login_form li.check{
+	text-indent: 20px;
+}
+.login_form .check label{
+	margin-right: 20px;
+	cursor: default;
+	text-indent: 10px;
+}
+.login_form .check .lcheck{
+	position: relative;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.login_form .check span{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 16px;
+	height: 16px;
+	background: url(img/login_icon.png) no-repeat -180px 0;
+}
+/*找回密码和注册账号*/
+.login_form .rePass{
+	float: right;
+	display: inline-block;
+}
+.login_form a.getpass{
+	color: #464646;
+}
+.login_form a:hover{
+	text-decoration: underline;
+}
+
+
+/*登录按钮*/
+.login_btn{
+	float: left;
+	width: 300px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	text-align: center;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	background: url(img/login_icon.png) no-repeat 0 -40px;
+}
+.login_btn span{
+	display: inline-block;
+	width: 20px;
+}
+.login_ext{
+	width: 300px;
+	margin: 0 auto;
+	padding: 30px 0 0;
+}
+.login_ext dt{
+	height: 20px;
+	line-height: 20px;
+	margin: -15px 0 25px;
+	display: block;
+	zoom: 1;
+	position: relative;
+	border-bottom: 1px solid #e7e7e7;
+}
+.login_ext .tit{
+	position: absolute;
+    left: 50%;
+    top: 10px;
+    margin: 0 0 0 -60px;
+    background: #fff;
+    width: 120px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.login_ext dd ul{
+	width: 270px;
+	height: 30px;
+	margin: 0 auto;
+	zoom: 1;
+}
+.login_ext dd ul li{
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-right: 24px;
+	/*理论上的值是30px*/
+	zoom: 1;
+}
+.login_ext dd ul li a{
+	opacity: 0.8;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(img/login_icon.png) no-repeat
+}
+.login_ext a.qq{
+	background-position: 0 0;
+}
+.login_ext a.wx{
+	background-position: -30px 0;
+}
+.login_ext a.wb{
+	background-position: -60px 0;
+}
+.login_ext a.zfb{
+	background-position: -90px 0;
+}
+.login_ext a.wlt{
+	background-position: -120px 0;
+}
+
+/* 扫二维码登录==>短信登录和账号登录 */
+/* 目前只有短信登录 */
+.login .login_ewm{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.login .login_ewm{
+	background: url(img/login_icon.png) no-repeat 0 -400px;
+	z-index: 100;
+}
+
+.login .login_go{
+	display: inline-block;
+	background: url(img/login_icon.png) no-repeat 0 -360px;
+}
+.login .login_go{
+	width: 85px;
+	height: 25px;
+	position: absolute;
+	right: 55px;
+	bottom: 12px;
+	z-index: 100;
+}
+
+/*==== 页脚  ====*/
+.footer_wrap{
+	height: 100px;
+}
+
+.footer_wrap .footer{
+	margin-top: 10px;
+}
+
+/*网站导航*/
+.foot_link,.foot_link .link_con,.foot_link .link_con ul{
+	min-width: 1000px;
+	text-align: center;
+	clear: both;
+}
+.foot_link .link_con ul{
+	padding-top: 15px;
+}
+.foot_link .link_con ul li{
+	display: inline;
+	text-align: center;
+	color: #464646;
+}
+.foot_link .link_con ul li a{
+	margin: 0 8px 0 6px;
+	color: #464646;
+	font-size: 12px;
+	line-height: 30px;
+}
+.foot_link .link_con ul li a:hover{
+	text-decoration: underline;
+}
+
+/*网站声明*/
+.foot_explain{
+	min-width: 1000px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #999;
+	clear: both;
+}
+.foot_explain p a{
+	color: #999;
+}
+.foot_explain p a:hover{
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

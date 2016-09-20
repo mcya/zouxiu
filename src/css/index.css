@@ -1,0 +1,186 @@
+
+
+/*================ 内容 开始 ===============*/
+.content_wrap{
+	width: 100%;
+	min-width: 1200px;
+	margin: 0 auto;
+}
+.conBox{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0 30px;
+}
+
+/* banner 广告 */
+.conBox .con_Banner{
+	width: 1200px;
+	height: 610px;
+	margin: 0 auto;
+	padding: 0 0 20px;
+	position: relative;
+	overflow: hidden;
+}
+.conBox .con_Banner .banner{
+	width: 1200px;
+	height: 610px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/*快捷入口*/
+.conBox .con_shortcut{
+	width: 1170px;
+	margin: 0 auto;
+	height: 86px;
+	padding: 0 0 20px 30px;
+}
+
+/*先设置所有的a，再单独设置特殊的a*/
+.conBox .con_shortcut a{ 
+	display: block;
+	border: 0;
+	float: left;
+	width: 247px;
+	/*原来计算值是250px，可是这里为什么会这样*/
+	height: 86px;
+	margin-right: 60px;
+	background: url(img/homeIcon.jpg) no-repeat;
+}
+.conBox .con_shortcut a.share{
+	background-position: 0 0;
+}
+.conBox .con_shortcut a.new{
+	background-position: -250px 0;
+}
+.conBox .con_shortcut a.newbie{
+	background-position: -745px 0;
+}
+.conBox .con_shortcut a.friend{
+	background-position: -985px 0;
+	margin: 0;
+}
+
+/*所有的  H3(查看更多) 都设置相同的样式*/
+.conBox h3{
+	padding: 0 0 20px;
+	text-align: center;
+}
+
+/* 尖货推荐 */
+.conBox .con_goods{
+	width: 1200px;
+	margin: 0 auto;
+}
+.conBox .con_goods ul{
+	margin: 0 0 40px;
+	overflow: hidden;
+}
+.conBox .con_goods ul li{
+	float: left;
+	width: 400px;
+	margin: 0;
+}
+.conBox .con_goods ul li a,.conBox .con_hot ul li a,.conBox .con_store ul li a,.conBox .con_find ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 0;
+	position: relative;
+	background-color: #fff;
+}
+.conBox .con_goods ul li a img{
+	opacity: 1;
+	/* js */
+}
+
+/* 热荐专题 */
+.conBox .con_hot{
+	width: 1200px;
+	margin: o auto;
+}
+.conBox .con_hot ul,.conBox .con_store ul{
+	overflow: hidden;
+}
+.conBox .con_hot ul li{
+	float: left;
+	width: 600px;
+	margin: 0 0 40px;
+}
+
+/*a标签的样式跟 "尖货推荐" a样式一样*/
+
+.conBox .con_hot ul li a img.pic{
+	width: 600px;
+	height: 300px;
+	display: inline;
+}
+.conBox .con_hot ul li a p{
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin: -40px 0 0;
+	text-align: center;
+}
+
+/* 精选卖场con_store */
+
+/*ul和"热荐主题的样式一样"*/
+
+.conBox .con_store ul li{
+	float: left;
+	width: 400px;
+	margin: 0 0 40px;
+}
+
+/*a标签的样式跟"尖货推荐"a样式一样*/
+
+.conBox .con_store ul li a img.pic{
+	display: inline;
+	width: 400px;
+	height: 300px;
+}
+.conBox .con_store ul li a p{
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+}
+
+/* 豪车入口car */
+.conBox .con_car{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0 50px;
+	overflow: hidden;
+}
+.conBox .con_car a{
+	display: block;
+	background-color: #fff;
+}
+
+/*js变化*/
+.conBox .con_car a{
+	opacity: 1;
+}
+
+/*发现好货*/
+.conBox .con_find ul{
+	width: 1217px;
+	overflow: hidden;
+	margin: 0 auto 20px;
+}
+.conBox .con_find ul li{
+	float: left;
+	width: 287px;
+	margin: 0 17px 20px 0;
+}
+
+/*a标签的样式跟"尖货推荐"a样式一样*/
+
+
+
+
+
+
