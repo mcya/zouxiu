@@ -1,0 +1,117 @@
+
+/*主体内容*/
+.content_main_wrap {
+    width: 100%;
+    min-width: 1250px;
+    margin: 0 auto;
+    background: #4b303f url(img/body_bg1.jpg) center top no-repeat fixed;
+}
+.mainbox {
+    width: 1250px;
+    margin: 0 auto;
+    padding: 680px 0 50px;
+    position: relative;
+}
+/*右侧菜单*/
+.mainbox .main_menu {
+    width: 133px;
+    position: fixed;
+    left: 50%;
+    margin: 0 0 0 651px;
+    top: 452px;
+    z-index: 1;
+}
+.mainbox .main_menu ul {
+    width: 133px;
+    position: relative;
+}
+.mainbox .main_menu ul li{
+    float: left;
+    width: 133px;
+    height: 40px;
+    margin: 0 0 15px;
+}
+.mainbox .main_menu ul li a {
+    display: block;
+    width: 133px;
+    height: 40px;
+    background: url(img/menu0918.png) no-repeat;
+}
+.mainbox .main_menu ul li a.nav1 {
+    background-position: 0 0;
+}
+.mainbox .main_menu ul li a.nav2 {
+    background-position: 0 -50px;
+}
+.mainbox .main_menu ul li a.nav3 {
+    background-position: 0 -100px;
+}
+.mainbox .main_menu ul li a.nav4 {
+    background-position: 0 -150px;
+}
+.mainbox .main_menu ul li a.nav5 {
+    background-position: 0 -200px;
+}
+/*鼠标经过的时候*/
+/*鼠标经过的时候和鼠标点击的状态是一样的*/
+.mainbox .main_menu ul li:hover a.nav1 {
+    background-position: -150px 0;
+}
+.mainbox .main_menu ul li:hover a.nav2 {
+    background-position: -150px -50px;
+}
+.mainbox .main_menu ul li:hover a.nav3 {
+    background-position: -150px -100px;
+}
+.mainbox .main_menu ul li:hover a.nav4 {
+    background-position: -150px -150px;
+}
+.mainbox .main_menu ul li:hover a.nav5 {
+    background-position: -150px -200;
+}
+/*.mainbox .main_menu ul li:hover a.nav1, .mainbox .main_menu ul li.current a.nav1 {
+    background-position: -150px 0;
+}*/
+
+
+/*列表的图标排版*/
+.mainbox .zt_content{
+    width:1250px;
+    background:url(img/woman_bg.png) repeat;
+    margin:0 auto;
+    padding:0;
+}
+.mainbox .zt_content .zt_iteam_three{
+    padding:0 0 0 25px;
+    overflow:hidden;
+    margin-top:0;
+}
+.mainbox .zt_content .zt_iteam_three li{
+    float:left;
+    width:385px;
+    margin:23px 23px 0 0;
+}
+.mainbox .zt_content .zt_iteam_three li a{
+    display:block;
+    width:385px;
+    transition:all 0.5s;
+    /*动画完成的时间间隔*/
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -o-transition:all .5s;
+}
+/*利用H5的动画属性，实现鼠标经过的效果*/
+.mainbox .zt_content .zt_iteam_three li a:hover{
+    transform:translateY(-10px);
+    /*上移10px*/
+    -webkit-transform:translateY(-10px);
+    -moz-transform:translateY(-10px);
+    -o-transform:translateY(-10px);
+}
+/*图片尺寸*/
+.mainbox .zt_content .zt_iteam_three li img{
+    width:385px;
+}
+
+
+
