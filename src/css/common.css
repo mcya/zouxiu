@@ -236,6 +236,12 @@ body{ font:12px tahoma, arial, sans-serif;_font:12px 'å®‹ä½“', tahoma, a
 	color: #bfbfbf!important;
 	border-bottom: 2px solid #727071!important;
 }
+.navBox .navList li a:hover{
+	color: #bfbfbf;
+	border-bottom: 2px solid #727071;
+}
+
+
 /*发现*/
 .navBox .navList .fine{
 	color: #fc0000;
@@ -273,18 +279,27 @@ body{ font:12px tahoma, arial, sans-serif;_font:12px 'å®‹ä½“', tahoma, a
 .nav li a span{
 	display: inline-block;
 	height: 41px;
-	width: 60px;
 	line-height: 42px;
-	font-size: 14px;
-	text-align: center;
-	color: #000;
-	border: 1px solid #f7f7f7;
-	border-bottom: none;
 	overflow: hidden;
 	cursor: pointer;
+	font-size: 14px;
+	width: 60px;
+	text-align: center;
+	color: #000;
 	position: relative;
+	border-left: 1px solid #f7f7f7;
+	border-top: 1px solid #f7f7f7;
+	border-right: 1px solid #f7f7f7;
 }
 
+/*鼠标进过的样式*/
+/*一定要注意这里的权重问题和给哪个样式加的border,如果加错元素就会导致鼠标经过的时候有跳动*/
+.nav li.nav_select a span{
+	background-color: #fff;
+	border-left: 1px solid #D7D7D7;
+	border-top: 1px solid #D7D7D7;
+	border-right: 1px solid #D7D7D7;
+}
 
 /*导航的菜单栏*/
 .nav .menu_tab{

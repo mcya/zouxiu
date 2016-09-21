@@ -319,20 +319,24 @@ a.shop_delete:hover,a.shop_clear:hover,a.shop_collect:hover{
 
 /*==== 页脚  ====*/
 .footer_wrap{
-	margin: 0 auto;
+	margin: 15px auto 20px;
 	height: 100px;
 	width: 950px;
+	color: #7d7d7d;
+	line-height: 22px;
+	text-align: center;
+	padding-top: 10px;
 }
 
 .footer_wrap .footer{
 	width: 950px;
-	margin-top: 10px;
-	border-top: 1px solid #000;
+	border-top: 1px solid #999;
 }
 
 
 /*网站声明*/
 .foot_explain{
+	margin-top: 10px;
 	min-width: 1000px;
 	height: 20px;
 	line-height: 20px;
