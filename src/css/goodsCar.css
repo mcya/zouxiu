@@ -1,0 +1,177 @@
+
+/*购物车的CSS样式*/
+a{
+	color: #5b5b5b;
+	text-decoration: none;
+}
+.s_header { 
+	width:950px;
+	margin:0 auto;
+	background:#fff;
+	height:64px;
+	padding-top:12px;
+	z-index:99;
+	border-bottom: 1px solid #000;
+	position: relative;
+	font-size: 12px;
+}
+/*logo*/
+.s_header .s_logo { 
+	height:59px; 
+	width:194px; 
+	margin-left:13px; 
+}
+.s_header .s_logo a { 
+	height:59px; 
+	width:194px;
+	overflow:hidden;
+	display:block;
+	position: relative;
+}
+.s_header .s_logo b { 
+	background:url(img/s_05.png) no-repeat; 
+	width:194px;
+	height:59px;
+	position: absolute;
+	left:0;
+	top:0;
+}
+/*头部右侧*/
+.s_header .s_column {
+	position: absolute;
+	right:10px; 
+	top:15px; 
+	width:600px; 
+	text-align:right; 
+	color:#151515; 
+}
+.s_mar { 
+	margin-bottom:15px; 
+}
+/*客服热线*/
+.s_header .s_column p { 
+	height:20px;
+	line-height: 20px;
+	display:block; 
+}
+/*400-888号码*/
+.s_mar b{ 
+	font-size:18px;
+	font-weight: bolder;
+	color:#F26521;
+	line-height:18px; 
+}
+
+.s_mar a { 
+	float:right; 
+	padding:0 10px; 
+}
+.s_header .s_mar a{
+	display: inline-block;
+}
+.s_header .s_column p a:hover{
+	color: #F26521;
+}
+span.help_sx{
+	display: inline-block;
+	width: 2px;
+	padding: 0 2px;
+}
+
+
+.shop_list_wrap{
+	width:950px;
+	margin:0 auto;
+	overflow:hidden;
+}
+/*购物车进度条*/
+.shop_list {
+	height:40px;
+	padding-top:15px;
+}
+.shop_list .st_ul {
+	width:950px;
+	height:33px;
+	margin:0 auto;
+}
+.shop_list .st_ul li {
+	float:left;
+	width:316px;
+	background:#e2e2e2;
+	height:24px;
+	text-align:center;
+	line-height:24px;
+	font-size:14px;
+	font-weight:bold;
+	_overflow:hidden;
+}
+.shop_list .st_ul .sli_on, .shop_list .st_ul .sli_of,  .shop_list .st_ul .sli_un, .shop_list .st_ul .sli_l,  .shop_list .st_ul span.sli_b {
+	width:27px;
+	height:32px;
+	float:right;
+	overflow:hidden;
+	position:relative;
+	margin-top:-4px;
+}
+.shop_list .st_ul .sli_bg {
+	background:#82bf38;
+	color:#fff;
+}
+span.sli_on,span.sli_of,span.sli_bg{
+	background: url(img/s_shop1.gif) no-repeat;
+}
+.shop_list .st_ul span.sli_on {
+	background-position:0 0;
+}
+.shop_list .st_ul span.sli_of {
+	background-position:-27px 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*==== 页脚  ====*/
+.footer_wrap{
+	margin: 0 auto;
+	height: 100px;
+	width: 950px;
+}
+
+.footer_wrap .footer{
+	width: 950px;
+	margin-top: 10px;
+	border-top: 1px solid #000;
+}
+
+
+/*网站声明*/
+.foot_explain{
+	min-width: 1000px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #999;
+	clear: both;
+}
+.foot_explain p a{
+	color: #999;
+}
+.foot_explain p a:hover{
+	color: #feb300;
+}
+
+
+
+
+
+
+
+
+
+
