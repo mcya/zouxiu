@@ -57,6 +57,57 @@
     width: 402px;
 }
 
+/*================================*/
+/*#show {
+width: 240px;
+height: 338px;
+overflow: hidden;
+position: relative;
+left: 0;
+}
+*/
+#show_mark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 100px;
+	background-color: #000;
+	opacity: .5;
+	filter: alpha(opacity=50);
+	cursor: crosshair;
+	border: 1px solid #999;
+	display: none;
+}
+#zoom {
+	overflow: hidden;
+	z-index: 999999;
+	position: absolute;
+	top: 0;	
+	width: 402px;
+	height: 536px;
+	opacity: 1;
+	left: 415px;
+	border: 1px solid #ccc;
+	display: none;
+}
+#zoom img {
+	padding: 0px;
+	margin: 0px;
+	border: 0 none;
+	position: relative;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 99999999;
+}
+
+/*===============================*/
+
+
+
+
+
 /*小图*/
 .con_main .small_map{
     width: 405px;
@@ -66,13 +117,25 @@
 }
 .con_main .small_map li{
     float: left;
-    width: 73px;
+    width: 72px;
     height: 98px;
     display: inline;
     overflow: hidden;
     position: relative;
     margin: 5px 4px 0 4px;
     background: url(img/goodsinfo_icon.gif) no-repeat -200px -333px;
+}
+.con_main .small_map li a{
+    display: block;
+    width: 66px;
+    height: 88px;
+    margin: 4px 0 0 4px;
+}
+.con_main .small_map li a img{
+	width: 66px;
+    height: 88px;
+    float: left;
+    display: inline-block;
 }
 
 /* dc 表示当前的鼠标经过的状态*/
@@ -84,6 +147,18 @@
     margin: 2px 4px 0 4px;
     background: url(img/goodsinfo_icon.gif) no-repeat left -187px;
 }
+.con_main .small_map li.dc a{
+    display: block;
+    width: 66px;
+    height: 88px;
+    margin: 7px 0 0 3px
+}
+
+
+
+
+
+
 
 /*右侧 - 产品价格*/
 .pro_price{
