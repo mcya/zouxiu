@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>懒加载</title>
+	<style>
+		body{padding:50px;}
+		ul{list-style: none;padding:0;margin:0;}/*reset*/
+		#datalist{border:1px solid #ddd;padding:15px;}
+		#datalist li{padding:15px 5px;border-bottom:1px dotted #ccc;}
+		#page span{display:inline-block;margin:5px;width:40px;line-height:1.8;text-align: center;background-color:#dfdfdf;color:#666;}
+		#page span.active{background-color:#fc0;color:#fff;}
+	</style>
+	<script src="../js/jquery-1.12.0.js"></script>
+	<script>
+		$(function(){
+			//var $datalist = $('#datalist');
+			var pageNum = 1;
+
+			// 全局配置
+			$.ajaxSetup({
+				url:'/ajax/football',
+				data:{pageNo:pageNum},
+				dataType:'json',
+				success:function(res){
+					console.log(res);
+					
+					var $ul = $('<ul/>');
+					$.each(res.data,function(idx,item){
+						$('<li/>').html('<strong>'+item.name+'：</strong>' + item.content).appendTo($ul);
+					});
+
+					$datalist.append($ul);
+				}
+			});
+
+			// 页面一加载就请求服务器的数据
+			$.ajax();
+			$(window).on('scroll',function(){
+				var scrollTop = $(window).scrollTop();
+
+				// 懒加载：滚动《快到底部》的时候再加载
+				if(scrollTop >= $(document).height() - $(window).height() - 100){
+					pageNum++;
+					if(pageNum>=4){
+						pageNum = 1;
+					}
+
+					$.ajax({
+						data:{pageNo:pageNum}
+					});
+				}
+			});
+
+			// 手动触发滚动事件
+			$(window).trigger('scroll');
+		});
+	</script>
+</head>
+<body>
+	<div id="datalist">
+	</div>
+</body>
+</html>

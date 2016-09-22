@@ -86,12 +86,12 @@
     overflow:hidden;
     margin-top:0;
 }
-.mainbox .zt_content .zt_iteam_three li{
+.mainbox .zt_content .zt_iteam_three li.zt_lazyload_li{
     float:left;
     width:385px;
     margin:23px 23px 0 0;
 }
-.mainbox .zt_content .zt_iteam_three li a{
+.mainbox .zt_content .zt_iteam_three a.zt_lazyload_a{
     display:block;
     width:385px;
     transition:all 0.5s;
@@ -101,7 +101,7 @@
     -o-transition:all .5s;
 }
 /*利用H5的动画属性，实现鼠标经过的效果*/
-.mainbox .zt_content .zt_iteam_three li a:hover{
+.mainbox .zt_content .zt_iteam_three a:hover{
     transform:translateY(-10px);
     /*上移10px*/
     -webkit-transform:translateY(-10px);
