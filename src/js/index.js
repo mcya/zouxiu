@@ -1,4 +1,14 @@
 jQuery(function($){
+
+	//我的走秀，鼠标经过效果
+	$(".my_xiu").on("mouseover",function(){
+		console.log("1111")
+		$(this).find("#my_xiu").css("display","block").siblings("a").addClass("myxiu_up").addClass("myxiu_hover");
+	}).on("mouseleave",function(){
+		$(this).find("#my_xiu").css("display","none").siblings("a").removeClass("myxiu_up").removeClass("myxiu_hover");
+	})
+
+
 	//鼠标经过样式直接在CSS中更改
 	//===>经过样式直接用CSS的hover
 	
@@ -21,6 +31,22 @@ jQuery(function($){
 		$(this).find(".menu_tab").attr("style","height: 0px; opacity: 0; display: none;")
 	});
 
+	//快捷入口动画部分
+	//CSS实现
+	
+//	尖货推荐：鼠标经过内容改变透明度
+	$(".con_goods").on("mouseover","a",function(){
+		$(this).animate({opacity:0.7},300);
+	}).on("mouseleave","a",function(){
+		$(this).animate({opacity:1},200);
+	})
+	
+	//豪车入口：如上改变透明度
+	$(".con_car").on("mouseover","a",function(){
+		$(this).animate({opacity:0.8},300);
+	}).on("mouseleave","a",function(){
+		$(this).animate({opacity:1},200);
+	})
 	
 	
 });//jQuery(function($)

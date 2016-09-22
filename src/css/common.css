@@ -120,9 +120,10 @@ body{ font:12px tahoma, arial, sans-serif;_font:12px 'å®‹ä½“', tahoma, a
 	/*position: relative;
 	top: 0;*/
 }
-
+/*我的走秀*/
 .head_login li.my_xiu{
 	padding: 0 6px 0 0;
+	position: relative;
 }
 .head_login li.my_xiu a{
 	padding: 0 15px 0 10px;
@@ -131,7 +132,45 @@ body{ font:12px tahoma, arial, sans-serif;_font:12px 'å®‹ä½“', tahoma, a
 	background: url(img/headerIcon.png) no-repeat right -108px;
 	z-index: 999;
 }
-
+/*鼠标经过显示的部分*/
+.my_xiu .myXiu_menu{
+	display: none;
+    position: absolute;
+    top: 34px;
+    left: 0;
+    z-index: 998;
+    border: 1px solid #d7d7d7;
+    background-color: #FFF;
+    width: 73px!important;
+    padding-bottom: 8px;
+    border-top: none;
+}
+li.my_xiu a.myxiu_hover{
+	border: 1px solid #e5e4e4;
+	color: #d50215;
+	background-color: #fff!important;
+}
+li.my_xiu a.myxiu_up{
+	border-bottom: none;
+	padding: 0 15px 0 10px;
+	background: url(img/headerIcon.png) no-repeat right -143px;
+}
+.my_xiu .myXiu_menu a{
+	color: #464545;
+    display: block;
+    overflow: hidden;
+    line-height: 25px;
+    padding-left: 10px;
+    padding-right: 0px!important;
+    border: none!important;
+    background-image: none!important;
+}
+.my_xiu .myXiu_menu a:hover{
+	color: #d50215;
+	border-left: 1px solid #e5e4e4;
+	border-bottom: none;
+	background: #fff;
+}
 /*logo*/
 .logo{
 	width: 212px;
@@ -257,6 +296,9 @@ body{ font:12px tahoma, arial, sans-serif;_font:12px 'å®‹ä½“', tahoma, a
 	background-color: #f7f7f7;
 	border-bottom: 1px solid #fff;
 }
+.nav_box a:hover{
+	color: #f00;
+}
 .nav,.nav ul{
 	text-align: center;
 	width: 1200px;
@@ -299,6 +341,15 @@ body{ font:12px tahoma, arial, sans-serif;_font:12px 'å®‹ä½“', tahoma, a
 	border-left: 1px solid #D7D7D7;
 	border-top: 1px solid #D7D7D7;
 	border-right: 1px solid #D7D7D7;
+}
+/*精选频道*/
+#header .jxpd a{
+	color: #f00;
+	font-weight: bold;
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+	float: left;
 }
 
 /*导航的菜单栏*/
@@ -466,6 +517,12 @@ body{ font:12px tahoma, arial, sans-serif;_font:12px 'å®‹ä½“', tahoma, a
 	width: 110px;
 	height: 0px;
 	z-index: 10000;
+}
+area{
+	outline: none;
+	border: 0 none;
+	display: inline;
+	cursor: pointer;
 }
 /*========= 头部header 结束 =================*/
 

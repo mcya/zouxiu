@@ -46,6 +46,16 @@
 	height: 86px;
 	margin-right: 60px;
 	background: url(img/homeIcon.jpg) no-repeat;
+	transition: all 0.3s;
+     -webkit-transition: all 0.3s; 
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.conBox .con_shortcut a:hover{
+	transform: translateX(15px);
+	-webkit-transform: translateX(-15px);
+	-moz-transform: translateX(15px);
+	-o-transform: translateX(15px);
 }
 .conBox .con_shortcut a.share{
 	background-position: 0 0;
@@ -88,12 +98,16 @@
 	line-height: 0;
 	position: relative;
 	background-color: #fff;
+	overflow: hidden;
 }
 .conBox .con_goods ul li a img{
 	opacity: 1;
 	/* js */
 }
-
+/*鼠标经过*/
+/*.conBox .con_goods ul li a:hover img{
+	opacity: 0.78;
+}*/
 /* 热荐专题 */
 .conBox .con_hot{
 	width: 1200px;
@@ -110,11 +124,6 @@
 
 /*a标签的样式跟 "尖货推荐" a样式一样*/
 
-.conBox .con_hot ul li a img.pic{
-	width: 600px;
-	height: 300px;
-	display: inline;
-}
 .conBox .con_hot ul li a p{
 	width: 100%;
 	height: 80px;
@@ -124,7 +133,21 @@
 	margin: -40px 0 0;
 	text-align: center;
 }
-
+.conBox .con_hot ul li a img.pic{
+	width: 600px;
+    height: 300px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.con_hot ul li a:hover img.pic{
+	transform: scale(1.04);
+	/*对a利用overflow: hidden隐藏超出部分*/
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -o-transform: scale(1.04);
+}
 /* 精选卖场con_store */
 
 /*ul和"热荐主题的样式一样"*/
@@ -141,6 +164,16 @@
 	display: inline;
 	width: 400px;
 	height: 300px;
+	transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+}
+.con_store ul li a:hover img.pic{
+	transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -o-transform: scale(1.04);
 }
 .conBox .con_store ul li a p{
 	position: absolute;
@@ -179,7 +212,20 @@
 
 /*a标签的样式跟"尖货推荐"a样式一样*/
 
-
+/*实现鼠标经过添加边框的独特方法*/
+.conBox .con_find ul li p{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 285px;
+    height: 488px;
+    border: 1px solid #efefef;
+}
+.conBox .con_find ul li a:hover p{
+	width: 283px;
+    height: 486px;
+    border: 2px solid #d5d5d5;
+}
 
 
 
