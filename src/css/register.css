@@ -20,6 +20,9 @@ a{
 	outline: none;
 	text-decoration: none;
 }
+a:hover{
+	text-decoration: none;
+}
 
 img{
 	vertical-align: middle;
@@ -392,6 +395,32 @@ a.code_btn,a.code_btn2{
 	bottom: 12px;
 	z-index: 100;
 }
+/*表单验证*/
+.form_span{
+	display: inline-block;
+	margin-left: 10px;
+	width: 80px;
+	height: 24px;
+	float: left;
+	font-size: 20px;
+	line-height: 24px;
+	color: #FF3300;
+}
+.form_input{
+	display: inline-block;
+	width: 165px;
+	height: 24px;
+	float: left;
+}
+.form_lili{
+	display: block;
+    margin-top: 24px;
+    position: relative;
+    zoom: 1;
+    clear: both;
+}
+
+
 
 /*==== 页脚  ====*/
 .footer_wrap{

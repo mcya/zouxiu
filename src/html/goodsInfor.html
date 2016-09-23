@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/goodsInfor.css"/>
 		<script src="../js/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/mycookie.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/simpleZoom.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/goodsInfo.js" type="text/javascript" charset="utf-8"></script>
 	</head>
@@ -565,7 +566,8 @@
 				<div class="con_main">
 					<!--产品图片 开始-->
 					<div class="pro_map">
-						<!--大图-->
+						<!--<!--大图-->
+						<!------------------------------------coolie 1---------------------------->
 						<div class="big_map">
 							<div class="big_map_img" id="big_map_yym">
 								<img src="../img/g1_100_100(b1).jpg" style="width: 402px; height: 536px;" />
@@ -587,17 +589,17 @@
 				            	</li>
 					            <li class="">
 					            	<a href="#">
-					            		<img src="../img/g1_100_100(b1).jpg">
+					            		<img src="../img/g1_100_100(b4).jpg">
 					            	</a>
 					            </li>
 					            <li class="">
 					            	<a href="#">
-					            		<img src="../img/g1_100_100(b1).jpg">
+					            		<img src="../img/g1_100_100(b2).jpg">
 					            	</a>
 					            </li>
 					            <li class="">
 					            	<a href="#">
-					            		<img src="../img/g1_100_100(b1).jpg">
+					            		<img src="../img/g1_100_100(b3).jpg">
 					            	</a>
 					            </li>
 					            <li class="">
@@ -619,10 +621,8 @@
 							<div class="pro_title">
 								<!--大标题-->
 								<span>
-									<h1>
-										男士宇宙计型迪通拿测速计自动机械腕表 116503GY
-										<i></i>
-									</h1>
+									<!------------------------------------coolie 2---------------------------->
+									<h1 id="buy_mycar_name">男士宇宙计型迪通拿测速计自动机械腕表 116503GY</h1>
 								</span>
 								<!--小标题-->
 								<span class="cp">
@@ -640,7 +640,8 @@
 								<div id="prd_price_div" class="xxjx">
 									<div class="col1 z1">
 										<span class="spw">走 秀 价：</span>
-										<span class="style3">10.06万</span>
+										<!------------------------------------coolie 7---------------------------->
+										<span class="style3" id="buy_mycar_price">10.06万</span>
 									</div>
 									<p class="col1 xs">
 										<span class="rightxs">
@@ -682,12 +683,20 @@
 								<div class="modleBox">
 									<!-- 颜色 -->
 									<div class="cm_type" id="">
-										<p class="cm_color">颜<em></em>色:</p>
-										<!-- 可能存在多个颜色，每一个一个li -->
+										<!------------------------------------coolie 3---------------------------->
+										<p class="cm_color" id="buy_mycar_color">颜色:</p>
+										
 										<ul class="color_s">
 											<!-- select表示选中的 -->
 											<li class="select">
-												<a href="#" id="">灰色</a>
+												<!------------------------------------coolie 4---------------------------->
+												<a href="#" id="buy_mycar_colorValue">灰色</a>
+											</li>
+											<li>
+												<a href="">金色</a>
+											</li>
+											<li>
+												<a href="">真龙色</a>
 											</li>
 										</ul>
 									</div>
@@ -695,11 +704,20 @@
 									<!-- 尺码 -->
 									<div class="cm_type" id="">
 										<!-- 引用于颜色html -->
-										<p class="cm_color">尺<em></em>寸:</p>
+										<!------------------------------------coolie 5---------------------------->
+										<p class="cm_color" id="buy_mycar_bigsmll">尺寸:</p>
+										
 										<ul class="color_s">
 											<!-- select表示选中的 -->
 											<li class="select">
-												<a href="#" id="">40mm</a>
+												<!------------------------------------coolie 6---------------------------->
+												<a href="#" id="buy_mycar_bigsmllVal">40mm</a>
+											</li>
+											<li>
+												<a href="#">60mm</a>
+											</li>
+											<li>
+												<a href="">80mm</a>
 											</li>
 										</ul>
 									</div>
@@ -733,8 +751,8 @@
 									</div>
 									<!-- 立即购买 -->
 									<div class="buy">
-										<a href="#" class="buy0" title="立即购买"></a>
-										<a href="#" class="buy1" title="放入购物车"></a>
+										<a href="#" class="buy0" title="立即购买" id="buy_gobuy"></a><!------------coolie 按钮---------------------------------------------------->
+										<a href="#" class="buy1" title="放入购物车" id="buy_mycar_car"></a><!------------coolie 按钮---------------------------------------------------->
 										<a href="#" class="sc_t" title="收藏"></a>
 										
 									</div>

@@ -240,6 +240,18 @@ span.up{
 	background-position: -207px -179px;
 }
 
+/*收藏删除*/
+a.oprate{
+	display: block;
+	color: #00;
+	text-align: center;
+	line-height: 16px;
+}
+a.oprate:hover{
+	color: #F16220;
+}
+
+
 /*结算*/
 
 .car_con_total{

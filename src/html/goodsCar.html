@@ -5,6 +5,9 @@
 		<title>我的购物袋</title>
 		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/goodsCar.css">
+		<script src="../js/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/mycookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/goodsCar.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!--购物袋页面头部 开始-->
@@ -50,7 +53,7 @@
 			<div class="car_con">
 				<div class="car_con_table">
 					<table>
-						<tbody>
+						<tbody id="car_tbody">
 							<!-- 表格的头部 -->
 							<tr class="table_th">
 								<th class="car_check"><input type="checkbox">全选</th>
@@ -60,38 +63,7 @@
 								<th>数量()</th>
 								<th>操作</th>
 							</tr>
-							<!-- 选购的内容 -->
-							<tr class="table_con">
-								<!-- 选择 -->
-								<td class="car_check">
-									<input type="checkbox">
-								</td>
-								<!-- 商品图片 -->
-								<td class="car_shop">
-									<img src="" alt="">
-									<!-- 商品简要信息 -->
-									<P class="car_info">
-										<!-- 最终用js实现 -->
-										<span class="car_shop_name1">Shengloba</span>
-										<a href="#" class="car_shop_name2">女士新品休闲棉麻豹纹袖口西装外套</a>
-										<span class="car_shop_color">颜色：驼色 尺码：L</span>
-									</P>
-								</td>
-								
-								<!-- 购买价 -->
-								<td>11</td>
-								<!-- 小计 -->
-								<td>11</td>
-								<!-- 数量 -->
-								<td class="car_num">
-									<p>
-										<span class="down"></span><input type="text" value="1"><span class="up"></span>
-									</p>
-								</td>
-								<!-- 收藏/删除 -->
-								<td>11</td>
-							</tr>
-						</tbody>
+							
 					</table>
 				</div>
 			</div>
@@ -103,7 +75,7 @@
 				<a href="#" class="shop_collect">移至收藏夹</a>
 				</div>
 				<span class="shop_checked">已选商品<em>1</em>件</span>
-				<span class="shop_money">总计<em>(不含运费):</em><i><strong>￥</strong><b>7060</b></i></span>
+				<span class="shop_money">总计<em>(不含运费):</em><i><strong>￥</strong><b id="car_allmony">10.06万</b></i></span>
 				<a href="#" class="shop_gogo">.</a>
 			</div>
 			<div class="clear"></div>

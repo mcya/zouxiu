@@ -5,10 +5,12 @@
 		<title>用户注册(登录)--走秀</title>
 		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<script src="../js/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Register_login.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 	
-	这个页面既可以做为登录页也可以作为注册页面(即是短信验证登录)
+	<!--这个页面既可以做为登录页也可以作为注册页面(即是短信验证登录)-->
 	
 		<!--头部header 开始-->
 		<div id="header">
@@ -34,8 +36,8 @@
 							<!--表头，短信或手机-->
 							<ul class="login_tab">
 								<!--active应用于js中-->
-								<li><a href="#" >短信登录</a></li>
-								<li><a href="#" class="active">密码登录</a></li>
+								<li><a href="#reset" xxx="1">短信登录</a></li>
+								<li><a href="#login" class="active" xxx="2">密码登录</a></li>
 							</ul>
 							
 							<!--输入框登录部分-->
@@ -47,19 +49,24 @@
 								<!--短信验证登录-->
 								<!--短信验证登录-->
 								<!--记得更改对象的login_tab的active-->
-								<ul style="display: none;">
+								<ul style="display: none;" id="login">
+									<!--注册-->
 									<!-- 手机号码 -->
-									<li class="username">
-										<input type="text" name="phoneNum" id="phoneNum" value="" class="input_num" />
-										<!--<label for="">手机号码</label>-->
-										<span class="clear"></span>
+									<li class="username" id="dhhm">
+										<input type="text" name="phoneNum" id="phoneNum" value="" class="input_num" placeholder="请输入手机号码" />
+										<span style="display: inline-block; float: right; z-index: 999; color: red;"></span>
+										
 									</li>
+									<span class="clear"></span>
 
+									
+									<div id="codelili"></div>
+									<span class="clear"></span>
 									<!-- 验证码 -->
 									<li class="msgcode">
-										<input type="text" class="input_code" name="" id="" value="" />
+										<input type="text" class="input_code" name="" value="" />
 										<!--<label for="">短信验证码</label>-->
-										<a href="#" class="code_btn">获取验证码</a>
+										<a href="#" class="code_btn" id="code_btn">获取验证码</a>
 										<span class="clear"></span>
 										<!--利用一个空的span标签清除浮动塌陷问题-->
 									</li>
@@ -91,17 +98,17 @@
 								<!--账号登录-->
 								<!--账号登录-->
 								<!--记得更改对象的login_tab的active-->
-								<ul style="display:block;">
+								<ul style="display:block;" id="reset">
 									<!-- 手机号码 -->
 									<li class="username">
-										<input type="text" name="phoneNum" id="phoneNum" value="" class="input_num" />
+										<input type="text" name="phoneNum" id="username" value="" class="input_num" />
 										<!--<label for="">手机号码</label>-->
 										<span class="clear"></span>
 									</li>
 
 									<!-- 密码 -->
 									<li class="pass">
-										<input type="password" name="phoneNum" id="phoneNum" value="" class="input_num" />
+										<input type="password" name="phoneNum" id="password" value="" class="input_num" />
 										<!--<label for="">手机号码</label>-->
 										<span class="clear"></span>
 									</li>
@@ -110,7 +117,7 @@
 									<li class="check">
 										<label for="">
 											<span></span>
-											<input type="checkbox" class="lcheck" name="is_AutoLogin" id="" value="" checked="true" style="display: none;" />
+											<input type="checkbox" class="lcheck" name="is_AutoLogin" id="savePwd" value="" checked="true" style="display: none;" />
 											两周内自动登录
 											<input type="hidden" name="isAutoLogin" id="" value="" />
 										</label>
@@ -126,7 +133,7 @@
 									</li>
 									<!-- 登录按钮 -->
 									<li class="btn">
-										<button class="login_btn">登<span></span>录</button>
+										<button class="login_btn" id="btnLogin">登<span></span>录</button>
 										<span class="clear"></span>
 									</li>
 								</ul>

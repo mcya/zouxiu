@@ -456,7 +456,7 @@ left: 0;
 /*图标*/
 .money .gift, .money .fqfh {
     float: left;
-    background: url(/static/css/default/img/gift.gif) left center no-repeat;
+    background: url(img/fqb.gif) left center no-repeat;
     height: 20px;
     line-height: 20px;
     padding: 0 10px 0 20px;
@@ -469,17 +469,14 @@ left: 0;
 }
 
 /* 鼠标经过"分期付款"显示的内容 em */
-.money .fqfh em {
-    width: 428px;
-    background: url(img/gtipsbg.gif) no-repeat;
-}
+
 .money .gift em, .money .fqfh em {
     display: none;
     width: 288px;
     height: 75px;
     color: #4d4d4d;
     font-size: 12px;
-    font-style: norma;
+    font-style: normal;
     line-height: 20px;
     padding: 5px 6px 0;
     position: absolute;
@@ -487,9 +484,20 @@ left: 0;
     top: -80px;
     background: url(img/tipsbg.gif) no-repeat;
 }
-.money .fqfh font{
+.money .fqfh b font{
 	color: #EA7514;
 }
+
+.main .money .fqfh em {
+    width: 428px;
+    background: url(img/gtipsbg.gif) no-repeat;
+}
+.money .fqfh em img{
+	float: right;
+	padding: 3px 0 0;
+	vertical-align: middle;
+}
+
 /*走秀售后服务*/
 .money .fwb {
     float: left;
@@ -522,6 +530,18 @@ left: 0;
 .buy a.buy0{
 	background-position: 0 -844px;
 }
+/*鼠标经过的时候*/
+.buy a.buy0:hover{
+	background-position: 0 -880px;
+}
+.buy a.buy1:hover{
+	background-position: 0 -952px;
+}
+.buy a.sc_t:hover{
+	background-position: -211px -1471px;
+}
+
+
 /*放入购物袋*/
 .buy a.buy1{
 	background-position: 0 -916px;

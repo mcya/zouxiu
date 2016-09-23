@@ -4,28 +4,47 @@
 ;(function($){
 	$.fn.simpleZoom = function(options){
 		var defs = {
-			zoomBox : "#zoomBox",			//原图img的容器
-			markSize : [200, 100],			//原图img本身
-			zoomSize : [400, 400],			//选看区
-			zoomImg : [800, 800]			//放大倍数
+			zoomBox : "#zoom",			//原图img的容器
+			markSize : [120, 169],			//原图img本身
+			zoomSize : [402, 536],			//选看区
+			zoomImg : [804, 1072]			//放大倍数
 		};
 		var opt = $.fn.extend({}, defs, options);
 		return this.each(function(){
+
 			var markBox = $(this);
 			var zoomBox = $(opt.zoomBox);
 			var zoom_img = $(opt.zoomBox).find("img"); 
 			var markBoxSize = [markBox.width(), markBox.height(), markBox.offset().left, markBox.offset().top];
+			
 			var markSize = opt.markSize;
 			var zoomSize = opt.zoomSize;
+			
 			var zoomImg = opt.zoomImg;
+			
 			var mark_ele = "<i id='mark'></i>";
-			var mark_css = {position:"absolute", top:0, left:0, width:markSize[0]+"px", height:markSize[1]+"px", backgroundColor:"#000", opacity:.5, filter:"alpha(opacity=50)",  display:"none", cursor:"crosshair"};
+			
+			var mark_css = {
+				position:"absolute", 
+				top:0, left:0,
+				width:markSize[0]+"px", 
+				height:markSize[1]+"px", 
+				backgroundColor:"#000", 
+				opacity:.5, 
+				filter:"alpha(opacity=50)",  
+				display:"none", 
+				cursor:"crosshair"
+			};
 			
 			var show_w = markBoxSize[0]-markSize[0];
 			var show_h = markBoxSize[1]-markSize[1];
 
 			//created mark element and add cascading style sheets
-			zoomBox.css({width:zoomSize[0]+"px", height:zoomSize[1]+"px"});
+			zoomBox.css({
+				width:zoomSize[0]+"px", 
+				height:zoomSize[1]+"px"
+			});
+
 			markBox.append(mark_ele);
 			$("#mark").css(mark_css);
 
