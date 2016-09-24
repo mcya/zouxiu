@@ -36,15 +36,6 @@ jQuery(function($){
 		$(this).removeClass("dc");
 	});
 	
-	
-	//$('#smallPic a').click(function(){
-		//$(this).closest("li").addClass("dc").siblings("li").removeClass("dc")
-        //var litsrc = $(this).children('img').attr('src');
-        //$('#zoom img').attr('src',litsrc);//左侧图
-        //$('#big_map_yym img').attr('src',litsrc);//右侧的图片位置
-    //});
-	
-
     // 查看配送流程
     $(".layer13").on("mouseover","a",function(){
     	$(this).find("i").css("display","block");
@@ -57,6 +48,17 @@ jQuery(function($){
     	$(this).find("em").css("display","block");
     }).on("mouseleave",function(){
     	$(this).find("em").css("display","none")
+    })
+    
+    //颜色选择color_ul
+    //$(".color_s").on("click","a",function(){===>color_s与下面的ul起冲突
+    $(".color_ul").on("click","a",function(){
+    	$(this).attr("id","buy_mycar_colorValue").closest("li").addClass("select").siblings("li").removeClass("select").find("a").attr("id","")
+    })
+    
+    //尺码选择bigsmll_ul
+     $(".bigsmll_ul").on("click","a",function(){
+    	$(this).attr("id","buy_mycar_bigsmllVal").closest("li").addClass("select").siblings("li").removeClass("select").find("a").attr("id","")
     })
 
     // 点击加物品数量

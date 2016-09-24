@@ -401,7 +401,11 @@ left: 0;
     text-align: center;
     color: #646464
 }
-/*选中的a li.select*/
+/*鼠标经过的状态*/
+.con_main .color_s li a:hover{
+	border: 1px solid #ff6701;
+}
+/*JS选中的a li.select*/
 .con_main .color_s li.select a{
     border: 2px solid #ff6701;
     font-size: 12px;
